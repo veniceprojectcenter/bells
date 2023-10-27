@@ -1,0 +1,5 @@
+	<div ng-show="item.data.Shaft_Model && (item.data.Shaft_Model != 'Null')">
+		<H3>Interior 3D Model</H3>
+		<p ng-show="0"><a href="{{item.data.Shaft_Model}}" target="_blank">Click here</a>  to view a 3D Model of the Bell Tower Shaft</p>
+		<iframe width="640" height="480" src="{{item.data.Shaft_Model}}" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" class="lazyload"></iframe>
+	</div>

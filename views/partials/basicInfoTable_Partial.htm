@@ -1,0 +1,41 @@
+<div>
+	<table style="width: 100%" class="data-table">
+		<thead>
+			<tr>
+				<h3>Basic Information</h3>
+				<!-- <th class="four wide">Basic Info</th> -->
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-show="item['data']['Common name'] && item['data']['Common name'] != 'Null'">
+				<td><span style="display:inline;" class="key">Common name</span></td>
+				<td><span style="display:inline;" class="value">{{item['data']['Common name']}}</span></td>
+			</tr>
+
+			<tr ng-show="item['data']['Construction year'] && item['data']['Construction year'] != 'Null'">
+				<td><span style="display:inline;" class="key">Construction year</span></td>
+				<td><span style="display:inline;" class="value">{{item['data']['Construction year']}}</span></td>
+			</tr>
+
+			<tr ng-show="item['data']['Church name'] && item['data']['Church name'] != 'Null'">
+				<td><span style="display:inline;" class="key">Church name</span></td>
+				<td><span style="display:inline;" class="value">{{item['data']['Church name']}}</span></td>
+			</tr>
+			
+			<tr ng-show="item['data']['Sestiere'] && item['data']['Sestiere'] != 'Null'">
+				<td><span style="display:inline;" class="key">Sestiere</span></td>
+				<td><span style="display:inline;" class="value">{{item['data']['Sestiere']}}</span></td>
+			</tr>
+			
+			<tr ng-show="item['data']['Proprietor'] && item['data']['Proprietor'] != 'Null'">
+				<td><span style="display:inline;" class="key">Proprietor</span></td>
+				<td><span style="display:inline;" class="value">{{item['data']['Proprietor']}}</span></td>
+			</tr>
+
+			<tr ng-show="item['data']['Architect'] && item['data']['Architect'] != 'Null'">
+				<td><span style="display:inline;" class="key">Architect</span></td>
+				<td><span style="display:inline;" class="value">{{item['data']['Architect']}}</span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

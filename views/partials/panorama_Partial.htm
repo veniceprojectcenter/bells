@@ -1,0 +1,31 @@
+<div id="header" class="ui grid">
+	<div class="row">
+		<div class="column">
+			<div class="ui huge message page grid" style="
+				background:url({{item.media.images[item.data.CODICE_view_0].medium}}); 
+				background-size: cover;
+			    /*background-height: 200px;*/
+			    background-attachment: fixed;
+			    background-position: top;
+			    background-repeat: no-repeat;
+			    height: 200px;
+			    ">
+				<h1 id="Header-TowerName" class="ui huge header">{{ item.data['Common name'] }}</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 	<div class="ui fluid huge message page grid" style="height: 200px; background-image: url({{item.media.images[item.data.CODICE_view_0].medium}});">
+		<h1 class="ui huge header">{{ item.data['Common name'] }}</h1>
+	</div> -->
+
+<!-- 	<div ng-show="item.media.images[item.data.CODICE_view_0].medium && (item.media.images[item.data.CODICE_view_0].medium != 'Null')">
+		<H3>Panorama</H3>
+		<p>Click the image for full resolution - this is only a preview.</p>
+	</div>
+
+	<div style="overflow:auto" ng-show="item.media.images[item.data.CODICE_view_0].medium && (item.media.images[item.data.CODICE_view_0].medium != 'Null')">
+		<a href="{{item.media.images[item.data.CODICE_view_0].original}}" target="_blank"><img alt="Panorama of bell tower view" src="{{item.media.images[item.data.CODICE_view_0].medium}}" width="1800" height="216" class="lazyload"/></a>
+	</div> -->

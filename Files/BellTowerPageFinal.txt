@@ -1,0 +1,623 @@
+<includeonly>
+{{Infobox
+|above = <firebase url='{{{url}}}/birth_certificate/birthID' />
+<!--|title = <firebase url='{{{url}}}/birth_certificate/birthID' />-->
+|titlestyle = 
+|imagestyle = 
+|headerstyle = background:#ccf;
+|labelstyle = background:#ddf;
+|datastyle = 
+
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_tower}}/thumb}}
+|caption = [{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_tower}}/original}} Click here for larger image.]
+
+|header3 = Basic Information
+
+|label19 = Construction year
+|data19 = <firebase url='{{{url}}}/data/Construction year' />
+
+|label21 = Church name
+|data21 = {{#firebaseraw:{{{url}}}/data/Church name}} <!-- <firebase url='{{{url}}}/data/Church name' /> -->
+
+|label50 = Style
+|data50 = <firebase url='{{{url}}}/data/Tower style' />
+
+|label22 = Sestiere
+|data22 = <firebase url='{{{url}}}/data/Sestiere' />
+
+|label23 = Proprietor
+|data23 = <firebase url='{{{url}}}/data/Proprietor' />
+
+<!--|label24 = Public access
+|data24 = <firebase url='{{{url}}}/data/Public access' />-->
+
+|label49 = Architect
+|data49 = <firebase url='{{{url}}}/data/Architect' />
+
+|header50 = Technical Information
+
+|label51 = Tower height (m)
+|data51= <firebase url='{{{url}}}/data/Tower height_m' />
+
+|label52= Latitude
+|data52 =  <firebase url='{{{url}}}/data/Latitude' />
+
+|label53 = Longitude
+|data53 = <firebase url='{{{url}}}/data/Longitude' />
+
+|label54 = Building Material
+|data54 = <firebase url='{{{url}}}/data/Material' />
+
+}}
+
+<div> 
+The {{#ifeq: {{#firebaseraw:{{{url}}}/data/Common name }} | Null | bell tower | of  <firebase url='{{{url}}}/data/Common name' /> }} was built {{#ifeq: {{#firebaseraw:{{{url}}}/data/Construction year }} | Null | at an unknown date | in <firebase url='{{{url}}}/data/Construction year' /> }} by 
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Architect }} | Null | an unknown architect | the architect <firebase url='{{{url}}}/data/Architect' /> }} and is {{#ifeq: {{#firebaseraw:{{{url}}}/data/Church name}}. | Null | not affiliated with a church. | affiliated with the {{#firebaseraw:{{{url}}}/data/Church name}}. }}
+</div>
+
+==History==
+{|
+|||  {{#if: {{#firebaseraw:{{{url}}}/data/Significant history}} | <firebase url='{{{url}}}/data/Significant history' /> | The history of this bell tower is unknown}}
+<!--<firebase url='{{{url}}}/data/Architecture' /> <firebase url='{{{url}}}/data/Significant history' />-->
+|-
+|}
+<!--{|
+| Architecture: || <firebase url='{{{url}}}/data/Architecture' />
+|-
+| Architect: || <firebase url='{{{url}}}/data/Architect' />
+|-
+| Common name: || <firebase url='{{{url}}}/data/Common name' />
+|-
+| Significant history: || <firebase url='{{{url}}}/data/Significant history' />
+|-
+| Time open 1: || <firebase url='{{{url}}}/data/Time open 1' />
+|-
+| Time open 2: || <firebase url='{{{url}}}/data/Time open 2' />
+|-
+| Tower style: || <firebase url='{{{url}}}/data/Tower style' />
+|-
+| Latitude: || <firebase url='{{{url}}}/data/Latitude' />
+|-
+| Longitude: || <firebase url='{{{url}}}/data/Longitude' />
+|-
+| Material: || <firebase url='{{{url}}}/data/Material' />
+|-
+| Orientation degrees_Back: || <firebase url='{{{url}}}/data/Orientation degrees_Back' />
+|-
+| Orientation degrees_Front: || <firebase url='{{{url}}}/data/Orientation degrees_Front' />
+|-
+| Orientation degrees_Left: || <firebase url='{{{url}}}/data/Orientation degrees_Left' />
+|-
+| Orientation degrees_Right: || <firebase url='{{{url}}}/data/Orientation degrees_Right' />
+|-
+|}-->
+==Structural Details==
+{|
+| {{#if: {{#firebaseraw: {{{url}}}/data/Architecture}} | <firebase url='{{{url}}}/data/Architecture' /> | }}
+|}
+<!--
+===Foundation===
+{|
+The information for this section is missing or incomplete.
+|}
+-->
+===Shaft===
+<div>
+The shaft of the bell tower has {{#ifeq: {{#firebaseraw:{{{url}}}/data/Arches Front }} | Null | an unknown number of | <firebase url='{{{url}}}/data/Arches Front' /> }} arches on the front, 
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Arches Left }} | Null | an unknown number of | <firebase url='{{{url}}}/data/Arches Left' /> }} arches on the left, 
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Arches Right }} | Null | an unknown number of | <firebase url='{{{url}}}/data/Arches Right' /> }} arches on the right, {{#ifeq: {{#firebaseraw:{{{url}}}/data/Arches Back }} | Null | an unknown number of | <firebase url='{{{url}}}/data/Arches Back' /> }} arches on the back.
+There are {{#ifeq: {{#firebaseraw:{{{url}}}/data/Number of steps }} | Null | an unknown number of | a total of <firebase url='{{{url}}}/data/Number of steps' /> }} {{#ifeq: {{#firebaseraw:{{{url}}}/data/Number of landings' }} | Null | steps. | steps to the <firebase url='{{{url}}}/data/Number of landings' /> {{#ifeq: {{#firebaseraw:{{{url}}}/data/Number of landings }} | 1 | landing. | landings.}} }}
+
+===Belfry===
+<div> The belfry is made of {{#ifeq: {{#firebaseraw: {{{url}}}/data/Belfry landing material}} | Null | an unknown material | <firebase url='{{{url}}}/data/Belfry landing material' />}} with its bells supported {{#ifeq: {{#firebaseraw: {{{url}}}/data/Frame material}} | Null | in an unknown fashion. | by <firebase url='{{{url}}}/data/Frame material' /> <firebase url='{{{url}}}/data/Frame type' /> frames. }} 
+
+{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_view_0}}/small}}
+[{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_view_0}}/original}} View from the Belfry.]
+
+{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_top}}/thumb}}
+[{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_top}}/original}} Belfry Exterior.]
+
+<!--{|
+| Arches Back: || <firebase url='{{{url}}}/data/Arches Back' />
+|-
+| Arches_Front: || <firebase url='{{{url}}}/data/Arches_Front' />
+|-
+| Arches_Left: || <firebase url='{{{url}}}/data/Arches_Left' />
+|-
+| Arches_Right: || <firebase url='{{{url}}}/data/Arches_Right' />
+|-
+| Staircase material: || <firebase url='{{{url}}}/data/Staircase material' />
+|-
+| Stairs: || <firebase url='{{{url}}}/data/Stairs' />
+|-
+| Number of bad steps: || <firebase url='{{{url}}}/data/Number of bad steps' />
+|-
+| Belfry block depth_cm: || <firebase url='{{{url}}}/data/Belfry block depth_cm' />
+|-
+| Belfry block height_cm: || <firebase url='{{{url}}}/data/Belfry block height_cm' />
+|-
+| Belfry block width_cm: || <firebase url='{{{url}}}/data/Belfry block width_cm' />
+|-
+| Belfry landing length_cm: || <firebase url='{{{url}}}/data/Belfry landing length_cm' />
+|-
+| Belfry landing material: || <firebase url='{{{url}}}/data/Belfry landing material' />
+|-
+| Belfry landing width_cm: || <firebase url='{{{url}}}/data/Belfry landing width_cm' />
+|-
+| Belfry window depth_cm: || <firebase url='{{{url}}}/data/Belfry window depth_cm' />
+|-
+| Belfry window height_cm: || <firebase url='{{{url}}}/data/Belfry window height_cm' />
+|-
+| Belfry window width_cm: || <firebase url='{{{url}}}/data/Belfry window width_cm' />
+|-
+| Frame material: || <firebase url='{{{url}}}/data/Frame material' />
+|-
+| Frame missing screws or bolts: || <firebase url='{{{url}}}/data/Frame missing screws or bolts' />
+|-
+| Frame notes: || <firebase url='{{{url}}}/data/Frame notes' />
+|-
+| Frame restoration: || <firebase url='{{{url}}}/data/Frame restoration' />
+|-
+| Frame type: || <firebase url='{{{url}}}/data/Frame type' />
+|-
+| CODICE_view_0: || <firebase url='{{{url}}}/merged-media-ids/CODICE_view_0' />
+|-
+|}-->
+
+===Spire===
+
+{{#if: {{#firebaseraw:{{{url}}}/data/Spire Description }} | <firebase url='{{{url}}}/data/Spire Description'/> | }}
+
+{|
+
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Cross }} | Null | | <tr><td> Cross: </td><td> <firebase url='{{{url}}}/data/Cross' /> </td></tr> }}
+
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Balustrade }} | Null | |<tr><td> Balustrade: </td><td> <firebase url='{{{url}}}/data/Balustrade' /> </td></tr> }}
+
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Attic}} | Null | | <tr><td> Attic: </td><td> <firebase url='{{{url}}}/data/Attic' /> </td></tr> }}
+
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Finial }} | Null | | <tr><td> Finial: </td><td> <firebase url='{{{url}}}/data/Finial' /> </td></tr> }}
+
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Finial }} | Yes | <tr><td> Finial description: </td><td> <firebase url='{{{url}}}/data/Finial description' /> </td></tr> | }}
+
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Finial }} | Yes | <tr><td> Finial type: </td><td> <firebase url='{{{url}}}/data/Finial type' /> </td></tr> | }}
+
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Lightning rod}} | Null | | <tr><td> Lightning rod: </td><td> <firebase url='{{{url}}}/data/Lightning rod' /> </td></tr> }}
+
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Weathervane}} | Null | | <tr><td> Weathervane: </td><td> <firebase url='{{{url}}}/data/Weathervane' /> </td></tr> }}
+
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Ramp}} | Null | | <tr><td> Ramp: </td><td> <firebase url='{{{url}}}/data/Ramp' /> </td></tr> }}
+
+|}
+
+
+<!--==Renovation and Repair==-->
+<!--{|
+| Renovation and restoration description: || <firebase url='{{{url}}}/data/Renovation and restoration description' />
+|-
+| Renovation and restoration years: || <firebase url='{{{url}}}/data/Renovation and restoration years' />
+|-
+| Repair description: || <firebase url='{{{url}}}/data/Repair description' />
+|-
+| Repair year: || <firebase url='{{{url}}}/data/Repair year' />
+|-
+| Restoration visible _Back: || <firebase url='{{{url}}}/data/Restoration visible _Back' />
+|-
+| Restoration visible_Back: || <firebase url='{{{url}}}/data/Restoration visible_Back' />
+-
+| Restoration visible_Front: || <firebase url='{{{url}}}/data/Restoration visible_Front' />
+|-
+| Restoration visible_Left: || <firebase url='{{{url}}}/data/Restoration visible_Left' />
+|-
+| Restoration visible_Right: || <firebase url='{{{url}}}/data/Restoration visible_Right' />
+|-
+| Restoration_sides: || <firebase url='{{{url}}}/data/Restoration_sides' />
+|-
+| Number of ties and bands_Back: || <firebase url='{{{url}}}/data/Number of ties and bands_Back' />
+|-
+| Number of ties and bands_Front: || <firebase url='{{{url}}}/data/Number of ties and bands_Front' />
+|-
+| Number of ties and bands_Left: || <firebase url='{{{url}}}/data/Number of ties and bands_Left' />
+|-
+| Number of ties and bands_Right: || <firebase url='{{{url}}}/data/Number of ties and bands_Right' />
+|-
+| Number of windows_Back: || <firebase url='{{{url}}}/data/Number of windows_Back' />
+|-
+| Number of windows_Front: || <firebase url='{{{url}}}/data/Number of windows_Front' />
+|-
+| Number of windows_Left: || <firebase url='{{{url}}}/data/Number of windows_Left' />
+|-
+| Number of windows_Right: || <firebase url='{{{url}}}/data/Number of windows_Right' />
+|-
+| Barred window number _Back: || <firebase url='{{{url}}}/data/Barred window number _Back' />
+|-
+| Barred window number_Back: || <firebase url='{{{url}}}/data/Barred window number_Back' />
+|-
+| Barred window number_Front: || <firebase url='{{{url}}}/data/Barred window number_Front' />
+|-
+| Barred window number_Left: || <firebase url='{{{url}}}/data/Barred window number_Left' />
+|-
+| Barred window number_Right: || <firebase url='{{{url}}}/data/Barred window number_Right' />
+|-
+| Blocked window number _Back: || <firebase url='{{{url}}}/data/Blocked window number _Back' />
+|-
+| Blocked window number_Back: || <firebase url='{{{url}}}/data/Blocked window number_Back' />
+|-
+| Blocked window number_Front: || <firebase url='{{{url}}}/data/Blocked window number_Front' />
+|-
+| Blocked window number_Left: || <firebase url='{{{url}}}/data/Blocked window number_Left' />
+|-
+| Blocked window number_Right: || <firebase url='{{{url}}}/data/Blocked window number_Right' />
+|-
+| Meshed window number _Back: || <firebase url='{{{url}}}/data/Meshed window number _Back' />
+|-
+| Meshed window number_Back: || <firebase url='{{{url}}}/data/Meshed window number_Back' />
+|-
+| Meshed window number_Front: || <firebase url='{{{url}}}/data/Meshed window number_Front' />
+|-
+| Meshed window number_Left: || <firebase url='{{{url}}}/data/Meshed window number_Left' />
+|-
+| Meshed window number_Right: || <firebase url='{{{url}}}/data/Meshed window number_Right' />
+|-
+| Number of lessene: || <firebase url='{{{url}}}/data/Number of lessene' />
+|-
+| Inclination calculated: || <firebase url='{{{url}}}/data/Inclination calculated' />
+|-
+| Inclination direction: || <firebase url='{{{url}}}/data/Inclination direction' />
+|-
+| Exterior tower notes _Back: || <firebase url='{{{url}}}/data/Exterior tower notes _Back' />
+|-
+| Exterior tower notes_Back: || <firebase url='{{{url}}}/data/Exterior tower notes_Back' />
+|-
+| Exterior tower notes_Front: || <firebase url='{{{url}}}/data/Exterior tower notes_Front' />
+|-
+| Exterior tower notes_Left: || <firebase url='{{{url}}}/data/Exterior tower notes_Left' />
+|-
+| Exterior tower notes_Right: || <firebase url='{{{url}}}/data/Exterior tower notes_Right' />
+|-
+| Notes: || <firebase url='{{{url}}}/data/Notes' />
+|-
+|}
+-->
+==Bells==
+
+{{#if: {{#firebaseraw:{{{url}}}/data/Number of bells}} | <div> There are a total of <firebase url='{{{url}}}/data/Number of bells' /> bells in the belfry.</div> | }}
+
+{|
+{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_int_landing_belfry}}/thumb}}
+[{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_int_landing_belfry}}/original}} Bells]
+
+{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_floorplan}}/thumb}}
+[{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_floorplan}}/original}} Floorplan of Bells]
+
+{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_machine}}/thumb}}
+[{{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_machine}}/original}} Mechanism that controls the Bells]
+<!--{|
+| Number of bells: || <firebase url='{{{url}}}/data/Number of bells' />
+|-
+| CODICECC_1: || <firebase url='{{{url}}}/data/CODICECC_1' />
+|-
+| CODICE_floorplan: || <firebase url='{{{url}}}/data/CODICE_floorplan' />
+|- -->
+|}
+
+==Interactive Media==
+Please [http://bells.veniceprojectcenter.org/#/moreInfo/dffb615e-8a01-afa0-984a-cd7dce25bacf/{{#firebaseraw:{{{url}}}/birth_certificate/ckID}} click here] to further experience this bell tower within the Bells Application.
+
+==Technical Information==
+
+{{#ifeq: {{#firebaseraw:{{{url}}}/data/Book_Link }} | Null | |  <div> To see a detailed report of this tower from Alberto Lionello in his book "Techniche Costruttive, Dissesti E Consolodamenti Dei Campanili Di Venezia",  [{{#firebaseraw:{{{url}}}/data/Book_Link}} click here].</div>  }}
+
+{|
+|-
+<!--| Latitude: || <firebase url='{{{url}}}/data/Latitude' />
+|-
+| Longitude: || <firebase url='{{{url}}}/data/Longitude' />
+|-
+| Material: || <firebase url='{{{url}}}/data/Material' />
+|--->
+<!--| Orientation degrees_Back: || <firebase url='{{{url}}}/data/Orientation degrees_Back' />
+|-
+| Orientation degrees_Front: || <firebase url='{{{url}}}/data/Orientation degrees_Front' />
+|-
+| Orientation degrees_Left: || <firebase url='{{{url}}}/data/Orientation degrees_Left' />
+|-
+| Orientation degrees_Right: || <firebase url='{{{url}}}/data/Orientation degrees_Right' />
+|--->
+| Exterior block width_cm: || <firebase url='{{{url}}}/data/Exterior block width_cm' />
+|-
+<!--| Exterior door height_cm: || <firebase url='{{{url}}}/data/Exterior door height_cm' />
+|-
+| Exterior door width_cm: || <firebase url='{{{url}}}/data/Exterior door width_cm' />
+|-
+| Exterior door_Back: || <firebase url='{{{url}}}/data/Exterior door_Back' />
+|-
+| Exterior door_Front: || <firebase url='{{{url}}}/data/Exterior door_Front' />
+|-
+| Exterior door_Left: || <firebase url='{{{url}}}/data/Exterior door_Left' />
+|-
+| Exterior door_Right: || <firebase url='{{{url}}}/data/Exterior door_Right' />
+|-
+| CODICE_int_landing_ground: || <firebase url='{{{url}}}/data/CODICE_int_landing_ground' />
+|-
+| Interior door depth_cm: || <firebase url='{{{url}}}/data/Interior door depth_cm' />
+|-
+| Interior door height_cm: || <firebase url='{{{url}}}/data/Interior door height_cm' />
+|-
+| Interior door width_cm: || <firebase url='{{{url}}}/data/Interior door width_cm' />
+|-
+| Arches Front: || <firebase url='{{{url}}}/data/Arches Front' />
+|-
+| Arches Left: || <firebase url='{{{url}}}/data/Arches Left' />
+|-
+| Arches Right: || <firebase url='{{{url}}}/data/Arches Right' />
+|-
+| Arches_Back: || <firebase url='{{{url}}}/data/Arches_Back' />
+|-
+| Clock: || <firebase url='{{{url}}}/data/Clock' />
+|-
+| Clock mechanism landing: || <firebase url='{{{url}}}/data/Clock mechanism landing' />
+|-
+| Clock side: || <firebase url='{{{url}}}/data/Clock side' />
+|-
+| Clock working: || <firebase url='{{{url}}}/data/Clock working' />
+|--->
+| Window total number: || <firebase url='{{{url}}}/data/Window total number' />
+|-
+<!--|  Number of art pieces_Back: || <firebase url='{{{url}}}/data/ Number of art pieces_Back' />
+|-
+|  Number of art pieces_Front: || <firebase url='{{{url}}}/data/ Number of art pieces_Front' />
+|-
+|  Number of art pieces_Left: || <firebase url='{{{url}}}/data/ Number of art pieces_Left' />
+|-
+|  Number of art pieces_Right: || <firebase url='{{{url}}}/data/ Number of art pieces_Right' />
+|--->
+|  Number of decorations: || <firebase url='{{{url}}}/data/ Number of decorations' />
+|-
+<!--|  Number of exterior Inscriptions: || <firebase url='{{{url}}}/data/ Number of exterior Inscriptions' />
+|-
+| Decoration description: || <firebase url='{{{url}}}/data/Decoration description' />
+|--->
+| Exterior block depth_cm: || <firebase url='{{{url}}}/data/Exterior block depth_cm' />
+|-
+| Exterior block height_cm: || <firebase url='{{{url}}}/data/Exterior block height_cm' />
+|-
+<!--| Inscription: || <firebase url='{{{url}}}/data/Inscription' />
+|-
+| Inscription description: || <firebase url='{{{url}}}/data/Inscription description' />
+|-
+| Internal decoration description: || <firebase url='{{{url}}}/data/Internal decoration description' />
+|-
+| Internal decoration locations: || <firebase url='{{{url}}}/data/Internal decoration locations' />
+|--->
+| Internal landing material: || <firebase url='{{{url}}}/data/Internal landing material' />
+|-
+<!--| Internal transcription: || <firebase url='{{{url}}}/data/Internal transcription' />
+|-
+| Internal wall material: || <firebase url='{{{url}}}/data/Internal wall material' />
+|--->
+| Landing height to ceiling_cm: || <firebase url='{{{url}}}/data/Landing height to ceiling_cm' />
+|-
+<!--| Number Exterior inscriptions: || <firebase url='{{{url}}}/data/Number Exterior inscriptions' />
+|-
+| Number art pieces_Back: || <firebase url='{{{url}}}/data/Number art pieces_Back' />
+|-
+| Number art pieces_Front: || <firebase url='{{{url}}}/data/Number art pieces_Front' />
+|-
+| Number art pieces_Left: || <firebase url='{{{url}}}/data/Number art pieces_Left' />
+|-
+| Number art pieces_Right: || <firebase url='{{{url}}}/data/Number art pieces_Right' />
+|-
+| Number internal inscriptions: || <firebase url='{{{url}}}/data/Number internal inscriptions' />
+|-
+| Number of art pieces _Back: || <firebase url='{{{url}}}/data/Number of art pieces _Back' />
+|-
+| Number of art pieces_Back: || <firebase url='{{{url}}}/data/Number of art pieces_Back' />
+|-
+| Number of art pieces_Front: || <firebase url='{{{url}}}/data/Number of art pieces_Front' />
+|-
+| Number of art pieces_Left: || <firebase url='{{{url}}}/data/Number of art pieces_Left' />
+|-
+| Number of art pieces_Right: || <firebase url='{{{url}}}/data/Number of art pieces_Right' />
+|-
+| Number of decorations: || <firebase url='{{{url}}}/data/Number of decorations' />
+|-
+| Number of internal decorations: || <firebase url='{{{url}}}/data/Number of internal decorations' />
+|-
+| Number of landings: || <firebase url='{{{url}}}/data/Number of landings' />
+|-
+| Number of steps: || <firebase url='{{{url}}}/data/Number of steps' />
+|-
+| Arches Back: || <firebase url='{{{url}}}/data/Arches Back' />
+|-
+| Arches_Front: || <firebase url='{{{url}}}/data/Arches_Front' />
+|-
+| Arches_Left: || <firebase url='{{{url}}}/data/Arches_Left' />
+|-
+| Arches_Right: || <firebase url='{{{url}}}/data/Arches_Right' />
+|-
+| Staircase material: || <firebase url='{{{url}}}/data/Staircase material' />
+|-
+| Stairs: || <firebase url='{{{url}}}/data/Stairs' />
+|--->
+| Number of bad steps: || <firebase url='{{{url}}}/data/Number of bad steps' />
+|-
+| Belfry block depth_cm: || <firebase url='{{{url}}}/data/Belfry block depth_cm' />
+|-
+| Belfry block height_cm: || <firebase url='{{{url}}}/data/Belfry block height_cm' />
+|-
+| Belfry block width_cm: || <firebase url='{{{url}}}/data/Belfry block width_cm' />
+|-
+| Belfry landing length_cm: || <firebase url='{{{url}}}/data/Belfry landing length_cm' />
+|-
+| Belfry landing material: || <firebase url='{{{url}}}/data/Belfry landing material' />
+|-
+| Belfry landing width_cm: || <firebase url='{{{url}}}/data/Belfry landing width_cm' />
+|-
+| Belfry window depth_cm: || <firebase url='{{{url}}}/data/Belfry window depth_cm' />
+|-
+| Belfry window height_cm: || <firebase url='{{{url}}}/data/Belfry window height_cm' />
+|-
+| Belfry window width_cm: || <firebase url='{{{url}}}/data/Belfry window width_cm' />
+|-
+<!--| Frame material: || <firebase url='{{{url}}}/data/Frame material' />
+|-
+| Frame missing screws or bolts: || <firebase url='{{{url}}}/data/Frame missing screws or bolts' />
+|-
+| Frame notes: || <firebase url='{{{url}}}/data/Frame notes' />
+|-
+| Frame restoration: || <firebase url='{{{url}}}/data/Frame restoration' />
+|-
+| Frame type: || <firebase url='{{{url}}}/data/Frame type' />
+|-
+| Cross: || <firebase url='{{{url}}}/data/Cross' />
+|-
+| Balustrade: || <firebase url='{{{url}}}/data/Balustrade' />
+|-
+| Attic: || <firebase url='{{{url}}}/data/Attic' />
+|-
+| Finial: || <firebase url='{{{url}}}/data/Finial' />
+|-
+| Finial description: || <firebase url='{{{url}}}/data/Finial description' />
+|-
+| Finial type: || <firebase url='{{{url}}}/data/Finial type' />
+|--->
+| Lightning rod: || <firebase url='{{{url}}}/data/Lightning rod' />
+|-
+| Weathervane: || <firebase url='{{{url}}}/data/Weathervane' />
+|-
+| Ramp: || <firebase url='{{{url}}}/data/Ramp' />
+|-
+| Number of ties and bands_Back: || <firebase url='{{{url}}}/data/Number of ties and bands_Back' />
+|-
+| Number of ties and bands_Front: || <firebase url='{{{url}}}/data/Number of ties and bands_Front' />
+|-
+| Number of ties and bands_Left: || <firebase url='{{{url}}}/data/Number of ties and bands_Left' />
+|-
+| Number of ties and bands_Right: || <firebase url='{{{url}}}/data/Number of ties and bands_Right' />
+|-
+| Number of windows_Back: || <firebase url='{{{url}}}/data/Number of windows_Back' />
+|-
+| Number of windows_Front: || <firebase url='{{{url}}}/data/Number of windows_Front' />
+|-
+| Number of windows_Left: || <firebase url='{{{url}}}/data/Number of windows_Left' />
+|-
+| Number of windows_Right: || <firebase url='{{{url}}}/data/Number of windows_Right' />
+|-
+<!--| Barred window number _Back: || <firebase url='{{{url}}}/data/Barred window number _Back' />
+|-
+| Barred window number_Back: || <firebase url='{{{url}}}/data/Barred window number_Back' />
+|-
+| Barred window number_Front: || <firebase url='{{{url}}}/data/Barred window number_Front' />
+|-
+| Barred window number_Left: || <firebase url='{{{url}}}/data/Barred window number_Left' />
+|-
+| Barred window number_Right: || <firebase url='{{{url}}}/data/Barred window number_Right' />
+|-
+| Blocked window number _Back: || <firebase url='{{{url}}}/data/Blocked window number _Back' />
+|-
+| Blocked window number_Back: || <firebase url='{{{url}}}/data/Blocked window number_Back' />
+|-
+| Blocked window number_Front: || <firebase url='{{{url}}}/data/Blocked window number_Front' />
+|-
+| Blocked window number_Left: || <firebase url='{{{url}}}/data/Blocked window number_Left' />
+|-
+| Blocked window number_Right: || <firebase url='{{{url}}}/data/Blocked window number_Right' />
+|-
+| Meshed window number _Back: || <firebase url='{{{url}}}/data/Meshed window number _Back' />
+|-
+| Meshed window number_Back: || <firebase url='{{{url}}}/data/Meshed window number_Back' />
+|-
+| Meshed window number_Front: || <firebase url='{{{url}}}/data/Meshed window number_Front' />
+|-
+| Meshed window number_Left: || <firebase url='{{{url}}}/data/Meshed window number_Left' />
+|-
+| Meshed window number_Right: || <firebase url='{{{url}}}/data/Meshed window number_Right' />
+|--->
+| Number of lessene: || <firebase url='{{{url}}}/data/Number of lessene' />
+|-
+<!--| Inclination calculated: || <firebase url='{{{url}}}/data/Inclination calculated' />
+|-
+| Inclination direction: || <firebase url='{{{url}}}/data/Inclination direction' />
+|-
+| Exterior tower notes _Back: || <firebase url='{{{url}}}/data/Exterior tower notes _Back' />
+|-
+| Exterior tower notes_Back: || <firebase url='{{{url}}}/data/Exterior tower notes_Back' />
+|-
+| Exterior tower notes_Front: || <firebase url='{{{url}}}/data/Exterior tower notes_Front' />
+|-
+| Exterior tower notes_Left: || <firebase url='{{{url}}}/data/Exterior tower notes_Left' />
+|-
+| Exterior tower notes_Right: || <firebase url='{{{url}}}/data/Exterior tower notes_Right' />
+|-
+| Notes: || <firebase url='{{{url}}}/data/Notes' />
+|--->
+|}
+<!--|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICECC_1}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_B}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_F}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_L}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_R}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_skyshot}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_top}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_ext_tower}}/thumb}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_floorplan}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_int_landing_attic}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_int_landing_belfry}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_int_landing_ground}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_machine}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/CODICE_view_0}}/thumb}}
+|-
+-->
+<!--|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B}}/thumb}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B_F}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B_F_L}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B_F_L_R}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B_F_L_R_sky}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B_F_L_R_sky_top}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B_F_L_R_sky_top_tower}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B_F_L_R_sky_top_tower_plan}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B_F_L_R_sky_top_tower_plan_attic}}/thumb}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B_F_L_R_sky_top_tower_plan_attic_belfry}}/thumb}}
+|-
+|image = {{#firebaseraw:{{{url}}}/media/images/{{#firebaseraw:{{{url}}}/data/Tower_CC1_B_F_L_R_sky_top_tower_plan_attic_belfry_ground}}/thumb}}
+|--->
+==Map==
+<fb-map height='300px' list='https://cityknowledge.firebaseIO.com/groups/Bell Tower Page Final/members' root='https://cityknowledge.firebaseIO.com/data' highlights='{{{url}}}/birth_certificate/ckID' tooltip='/birth_certificate/birthID' />
+
+[[Category:Bell Tower Page Final]]
+[[Category:CK-data]]
+
+</includeonly>
+==See Also==
+{{Navbox 
+|name = Bell Tower Page Final navbox
+|title = Bell Towers of Venice
+
+|group1 = Bell Towers
+|list1 = [[Bell Tower of San Angelo Raffaele | Bell Tower of San Angelo Raffaele]]{{w}}[[Bell Tower of Santi Gervasio e Protasio | Bell Tower of Santi Gervasio e Protasio]]{{w}}[[Bell Tower of Santa Margherita | Bell Tower of Santa Margherita ]]{{w}}[[Bell Tower of Sant'Erosia | Bell Tower of Sant'Erosia]]{{w}}[[Bell Tower of San Nicolò del Lido | Bell Tower of San Nicolò del Lido]]{{w}}[[Bell Tower of Santa Maria Assunta di Torcello | Bell Tower of Santa Maria Assunta di Torcello]]{{w}}[[Bell Tower of Basilica di San Marco | Bell Tower of Basilica di San Marco]]{{w}}[[Bell Tower of Santa Maria dei Miracoli | Bell Tower of Santa Maria dei Miracoli]]{{w}}[[Bell Tower of Ognissanti di Pellestrina | Bell Tower of Ognissanti di Pellestrina]]{{w}}[[Bell Tower of San Giorgio Maggiore in Isola | Bell Tower of San Giorgio Maggiore in Isola ]]{{w}}[[Bell Tower of San Canciano | Bell Tower of San Canciano]]{{w}}[[Bell Tower of Santa Maria Elisabetta | Bell Tower of Santa Maria Elisabetta]]{{w}}[[Bell Tower of Eremite di San Giuseppe | Bell Tower of Eremite di San Giuseppe]]{{w}}[[Bell Tower of Santa Maria della Presentazione | Bell Tower of Santa Maria della Presentazione]]{{w}}[[Bell Tower of Santo Stefano di Murano | Bell Tower of Santo Stefano di Murano]]{{w}}[[Bell Tower of Santa Eufemia | Bell Tower of Santa Eufemia]]{{w}}[[Bell Tower of San Moise' Profeta | Bell Tower of San Moise' Profeta]]{{w}}[[Bell Tower of San Pietro Apostolo | Bell Tower of San Pietro Apostolo]]{{w}}[[Bell Tower of Santa Maria Assunta dei Gesuiti | Bell Tower of Santa Maria Assunta dei Gesuiti]]{{w}}[[Bell Tower of San Pietro| Bell Tower of San Pietro]]{{w}}[[Bell Tower of Santi Ermagora e Fortunato | Bell Tower of Santi Ermagora e Fortunato]]{{w}}[[Bell Tower of San Zaccaria | Bell Tower of San Zaccaria]]{{w}}[[Bell Tower of San Benedetto | Bell Tower of San Benedetto]]{{w}}[[Bell Tower of Torre dei Baini | Bell Tower of Torre dei Baini]]{{w}}[[Bell Tower of San Bartolomeo | Bell Tower of San Bartolomeo]]{{w}}[[Bell Tower of Santa Maria degli Angeli | Bell Tower of Santa Maria degli Angeli]]{{w}}[[Bell Tower of San Silvestro | Bell Tower of San Silvestro]]{{w}}[[Bell Tower of San Pantaleone | Bell Tower of San Pantaleone]]{{w}}[[Bell Tower of San Michele | Bell Tower of San Michele]]{{w}}[[Bell Tower of Ognissanti | Bell Tower of Ognissanti]]{{w}}[[Bell Tower of San Giacomo dell'Orio | Bell Tower of San Giacomo dell'Orio]]{{w}}[[Bell Tower of Sant'Eustachio | Bell Tower of Sant'Eustachio]]{{w}}[[Bell Tower of Santi Cosmo e Damiano | Bell Tower of Santi Cosmo e Damiano]]{{w}}[[Bell Tower of San Nicolo dei Mendicoli | Bell Tower of San Nicolo dei Mendicoli]]{{w}}[[Bell Tower of Santa Caterina di Mazzorbo | Bell Tower of Santa Caterina di Mazzorbo]]{{w}}[[Bell Tower of San Marciliano | Bell Tower of San Marciliano]]{{w}}[[Bell Tower of Santa Maria della Visitazione | Bell Tower of Santa Maria della Visitazione ]]{{w}}[[Bell Tower of San Pietro Martire | Bell Tower of San Pietro Martire]]{{w}}[[Bell Tower of San Rocco | Bell Tower of San Rocco ]]{{w}}[[Bell Tower of San Leone IX pp. | Bell Tower of San Leone IX pp.]]{{w}}[[Bell Tower of Sant'Erasmo | Bell Tower of Sant'Erasmo]]{{w}}[[Bell Tower of Sant'Angelo | Bell Tower of Sant'Angelo]]{{w}}[[Bell Tower of Santa Maria Gloriosa dei Frari | Bell Tower of Santa Maria Gloriosa dei Frari]]{{w}}[[Bell Tower of San Samuele Profeta | Bell Tower of San Samuele Profeta]]{{w}}[[Bell Tower of Sant'Ubaldo | Bell Tower of Sant'Ubaldo]]{{w}}[[Bell Tower of San Geremia e Lucia | Bell Tower of San Geremia e Lucia]]{{w}}[[Bell Tower of S. Cristoforo | Bell Tower of S. Cristoforo]]{{w}}[[Bell Tower of San Giovanni di Rialto | Bell Tower of San Giovanni di Rialto]]{{w}}[[Bell Tower of Santa Caterina | Bell Tower of Santa Caterina]]{{w}}[[Bell Tower of San Sebastiano | Bell Tower of San Sebastiano]]{{w}}[[Bell Tower of Santa Maria Maggiore | Bell Tower of Santa Maria Maggiore]]{{w}}[[Bell Tower of San Giobbe e Barnardino | Bell Tower of San Giobbe e Barnardino]]{{w}}[[Bell Tower of San Martino di Castello | Bell Tower of San Martino di Castello]]{{w}}[[Bell Tower of Santo Stefano Profeta | Bell Tower of Santo Stefano Profeta ]]{{w}}[[Bell Tower of San Giorgio dei Greci | Bell Tower of San Giorgio dei Greci]]{{w}}[[Bell Tower of San Giovanni Decollato | Bell Tower of San Giovanni Decollato]]{{w}}[[Bell Tower of San Lazzaro dei Mendicanti | Bell Tower of San Lazzaro dei Mendicanti]]{{w}}[[Bell Tower of Santa Maria della Consolazione | Bell Tower of Santa Maria della Consolazione]]{{w}}[[Bell Tower of Sant'Andrea Apostolo | Bell Tower of Sant'Andrea Apostolo]]{{w}}[[Bell Tower of San Giovanni Nuovo | Bell Tower of San Giovanni Nuovo]]{{w}}[[Bell Tower of Sant'Antonino | Bell Tower of Sant'Antonino]]{{w}}[[Bell Tower of Santa Sophia | Bell Tower of Santa Sophia]]{{w}}[[Bell Tower of Santa Maria Mater Domini | Bell Tower of Santa Maria Mater Domini]]{{w}}[[Bell Tower of Malamocco | Bell Tower of Malamocco]]{{w}}[[Bell Tower of San Francesco de la Vigna | Bell Tower of San Francesco de la Vigna]]{{w}}[[Bell Tower of S. Felice | Bell Tower of S. Felice]]{{w}}[[Bell Tower of San Francesco di Paula | Bell Tower of San Francesco di Paula]]{{w}}[[Bell Tower of Santi Simone e Giuda | Bell Tower of Santi Simone e Giuda]]{{w}}[[Bell Tower of San Giuliano  | Bell Tower of San Giuliano ]]{{w}}[[Bell Tower of Santa Maria Formosa | Bell Tower of Santa Maria Formosa]]{{w}}[[Bell Tower of S. Alvise | Bell Tower of S. Alvise]]{{w}}[[Bell Tower of Santa Maria Assunta del Carmelo | Bell Tower of Santa Maria Assunta del Carmelo]]{{w}}[[Bell Tower of Santissimo Redentore | Bell Tower of Santissimo Redentore ]]{{w}}[[Bell Tower of San Paolo Apostolo | Bell Tower of San Paolo Apostolo]]{{w}}[[Bell Tower of Santa Croce degli Armeni | Bell Tower of Santa Croce degli Armeni]]{{w}}[[Bell Tower of San Cassiano | Bell Tower of San Cassiano]]{{w}}[[Bell Tower of Santa Teresa | Bell Tower of Santa Teresa]]{{w}}[[Bell Tower of San Giovanni Evangelista | Bell Tower of San Giovanni Evangelista]]{{w}}[[Bell Tower of San Giuseppe | Bell Tower of San Giuseppe]]{{w}}[[Bell Tower of Santa Fosca | Bell Tower of Santa Fosca]]{{w}}[[Bell Tower of S. Maria e Donati | Bell Tower of S. Maria e Donati]]{{w}}[[Bell Tower of San Barnaba | Bell Tower of San Barnaba]]{{w}}[[Bell Tower of San Nicolò da Tolentino | Bell Tower of San Nicolò da Tolentino]]{{w}}[[Bell Tower of Santissima Trinità | Bell Tower of Santissima Trinità]]{{w}}[[Bell Tower of Sant'Antonio                             | Bell Tower of Sant'Antonio]]{{w}}[[Bell Tower of S. Bonaventura Capuccine | Bell Tower of S. Bonaventura Capuccine]]{{w}}[[Bell Tower of S. Vitale | Bell Tower of S. Vitale]]{{w}}[[Bell Tower of Santa Maria di Nazareth  | Bell Tower of Santa Maria di Nazareth ]]{{w}}[[Bell Tower of Abbazia di Valverde | Bell Tower of Abbazia di Valverde]]{{w}}[[Bell Tower of Santa Maria del Rosario | Bell Tower of Santa Maria del Rosario]]{{w}}[[Bell Tower of S. Apostoli | Bell Tower of S. Apostoli]]{{w}}[[Bell Tower of San Luva ev. | Bell Tower of San Luva ev.]]{{w}}[[Bell Tower of S. Elena | Bell Tower of S. Elena]]{{w}}[[Bell Tower of San Simeone Profeta | Bell Tower of San Simeone Profeta]]{{w}}[[Bell Tower of Sant'Aponallinare | Bell Tower of Sant'Aponallinare]]{{w}}[[Bell Tower of S. Martino Vescovo | Bell Tower of S. Martino Vescovo]]{{w}}[[Bell Tower of San Giovanni Crisostomo | Bell Tower of San Giovanni Crisostomo]]{{w}}[[Bell Tower of Ss. Salvatore | Bell Tower of Ss. Salvatore]]{{w}}[[Bell Tower of Santa Maria della Salute | Bell Tower of Santa Maria della Salute]]
+}}

@@ -1,0 +1,858 @@
+[
+  {
+    "name":"ALVI",
+    "fullname":"S. Alvise",
+    "longitude":12.329563,
+    "latitude":45.446796,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ANDR",
+    "fullname":"Sant'Andrea Apostolo",
+    "longitude":12.316192,
+    "latitude":45.437654,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ANGE",
+    "fullname":"Santa Maria degli Angeli",
+    "longitude":12.348853,
+    "latitude":45.457724,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ANGM",
+    "fullname":"Sant'Angelo",
+    "longitude":12.412062,
+    "latitude":45.488133,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ANTN",
+    "fullname":"Sant'Antonino",
+    "longitude":12.346553,
+    "latitude":45.434976,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ANTP",
+    "fullname":"Sant'Antonio",
+    "longitude":12.302909,
+    "latitude":45.282036,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"APON",
+    "fullname":"Sant'Aponallinare",
+    "longitude":12.332519,
+    "latitude":45.437382,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"APOS",
+    "fullname":"S. Apostoli",
+    "longitude":12.336737,
+    "latitude":45.439752,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ASSG",
+    "fullname":"Santa Maria Assunta dei Gesuiti",
+    "longitude":12.33945,
+    "latitude":45.442797,
+    "hourly":2,
+    "time":""
+  },
+  {
+    "name":"ASSM",
+    "fullname":"Malamocco",
+    "longitude":12.338552,
+    "latitude":45.371875,
+    "hourly":1,
+    "time":""
+  },
+  {
+    "name":"ASST",
+    "fullname":"Santa Maria Assunta di Torcello",
+    "longitude":12.419881,
+    "latitude":45.497427,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"BARN",
+    "fullname":"San Barnaba",
+    "longitude":12.325862,
+    "latitude":45.432597,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"BART",
+    "fullname":"San Bartolomeo ",
+    "longitude":12.336573,
+    "latitude":45.436985,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"BASI",
+    "fullname":"Basilica di San Marco",
+    "longitude":12.339252,
+    "latitude":45.433372,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"BENE",
+    "fullname":"San Benedetto",
+    "longitude":12.332682,
+    "latitude":45.435021,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"BOLD",
+    "fullname":"Sant'Ubaldo",
+    "longitude":12.328863,
+    "latitude":45.438841,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"BONA",
+    "fullname":"S. Bonaventura Capuccine",
+    "longitude":null,
+    "latitude":null,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"CANC",
+    "fullname":"San Canciano",
+    "longitude":12.338727,
+    "latitude":45.439536,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"CARM",
+    "fullname":"Santa Maria Assunta del Carmelo",
+    "longitude":12.322414,
+    "latitude":45.432375,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"CASS",
+    "fullname":"San Cassiano",
+    "longitude":12.332613,
+    "latitude":45.439153,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"CATM",
+    "fullname":"Santa Caterina di Mazzorbo",
+    "longitude":12.406211,
+    "latitude":45.483263,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"COSM",
+    "fullname":"Santi Cosmo e Damiano",
+    "longitude":12.323256,
+    "latitude":45.424767,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"CROA",
+    "fullname":"Santa Croce degli Armeni",
+    "longitude":12.337934,
+    "latitude":45.434902,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"DONA",
+    "fullname":"S. Maria e Donati",
+    "longitude":12.357145,
+    "latitude":45.456576,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ELEM",
+    "fullname":"San Giovanni di Rialto",
+    "longitude":12.334718,
+    "latitude":45.438153,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ELEN",
+    "fullname":"S. Elena",
+    "longitude":12.365999,
+    "latitude":45.426656,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ELIS",
+    "fullname":"Santa Maria Elisabetta",
+    "longitude":12.369271,
+    "latitude":45.416534,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ERAS",
+    "fullname":"Sant'Erasmo",
+    "longitude":12.410644,
+    "latitude":45.458302,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"EROS",
+    "fullname":"Sant'Erosia",
+    "longitude":12.377698,
+    "latitude":45.441703,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"EUFE",
+    "fullname":"Santa Eufemia",
+    "longitude":null,
+    "latitude":null,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"EVAN",
+    "fullname":"San Giovanni Evangelista",
+    "longitude":12.326325,
+    "latitude":45.437553,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"FAVA1",
+    "fullname":"Santa Maria della Consolazione",
+    "longitude":12.338521,
+    "latitude":45.436338,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"FAVA2",
+    "fullname":"Santa Maria della Consolazione",
+    "longitude":12.338475,
+    "latitude":45.43621,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"FELI",
+    "fullname":"S. Felice",
+    "longitude":12.333505,
+    "latitude":45.441215,
+    "hourly":2,
+    "time":""
+  },
+  {
+    "name":"FORM",
+    "fullname":"Santa Maria Formosa",
+    "longitude":12.340979,
+    "latitude":45.436505,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"FOSC",
+    "fullname":"Santa Fosca",
+    "longitude":12.33264,
+    "latitude":45.442286,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"FRAR",
+    "fullname":"Santa Maria Gloriosa dei Frari",
+    "longitude":12.326652,
+    "latitude":45.436005,
+    "hourly":1,
+    "time":""
+  },
+  {
+    "name":"GERE",
+    "fullname":"San Geremia e Lucia",
+    "longitude":12.325747,
+    "latitude":45.442238,
+    "hourly":1,
+    "time":""
+  },
+  {
+    "name":"GESU1",
+    "fullname":"Santa Maria del Rosario",
+    "longitude":12.327634,
+    "latitude":45.428898,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"GESU2",
+    "fullname":"Santa Maria del Rosario",
+    "longitude":12.327403,
+    "latitude":45.428956,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"GIMA",
+    "fullname":"San Giorgio Maggiore in Isola",
+    "longitude":12.344017,
+    "latitude":45.42882,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"GIOB",
+    "fullname":"San Giobbe e Barnardino",
+    "longitude":12.320756,
+    "latitude":45.444338,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"GREC",
+    "fullname":"San Giorgio dei Greci",
+    "longitude":12.344739,
+    "latitude":45.434636,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"GRIS",
+    "fullname":"San Giovanni Crisostomo",
+    "longitude":12.337351,
+    "latitude":45.438566,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ISEP",
+    "fullname":"San Giuseppe",
+    "longitude":12.357881,
+    "latitude":45.429946,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"LAPI1",
+    "fullname":"Santa Maria della Visitazione",
+    "longitude":12.326975,
+    "latitude":45.433646,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"LAPI2",
+    "fullname":"Santa Maria della Visitazione",
+    "longitude":12.326975,
+    "latitude":45.433627,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"LAZZ",
+    "fullname":"San Lazzaro dei Mendicanti",
+    "longitude":12.343137,
+    "latitude":45.440508,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"LUCA",
+    "fullname":"San Luva ev.",
+    "longitude":12.334109,
+    "latitude":45.435261,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"MAGG",
+    "fullname":"Santa Maria Maggiore",
+    "longitude":12.317355,
+    "latitude":45.434454,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"MARB",
+    "fullname":"S. Martino Vescovo",
+    "longitude":12.418712,
+    "latitude":45.483366,
+    "hourly":2,
+    "time":""
+  },
+  {
+    "name":"MARC",
+    "fullname":"Santi Ermagora e Fortunato",
+    "longitude":12.329057,
+    "latitude":45.442295,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"MARG",
+    "fullname":"Santa Margherita",
+    "longitude":12.324197,
+    "latitude":45.43435,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"MART",
+    "fullname":"San Martino di Castello",
+    "longitude":12.34913,
+    "latitude":45.433776,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"MARZ",
+    "fullname":"San Marciliano",
+    "longitude":12.333278,
+    "latitude":45.443167,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"MATE",
+    "fullname":"Santa Maria Mater Domini",
+    "longitude":12.330481,
+    "latitude":45.439265,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"MEND",
+    "fullname":"San Nicolo dei Mendicoli",
+    "longitude":12.315872,
+    "latitude":45.431714,
+    "hourly":2,
+    "time":"12:00"
+  },
+  {
+    "name":"MICH",
+    "fullname":"San Michele",
+    "longitude":12.347256,
+    "latitude":45.448472,
+    "hourly":0,
+    "time":"16:00"
+  },
+  {
+    "name":"MIRA",
+    "fullname":"Santa Maria dei Miracoli",
+    "longitude":12.339484,
+    "latitude":45.438949,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"MOIS",
+    "fullname":"San Moise' Profeta",
+    "longitude":12.336308,
+    "latitude":45.432295,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"NICO",
+    "fullname":"San Nicol� del Lido",
+    "longitude":12.38117,
+    "latitude":45.427351,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"OGNI",
+    "fullname":"Ognissanti",
+    "longitude":12.323379,
+    "latitude":45.430732,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"OGNP",
+    "fullname":"Ognissanti di Pellestrina",
+    "longitude":12.301482,
+    "latitude":45.265021,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ORIO",
+    "fullname":"San Giacomo dell'Orio",
+    "longitude":12.327531,
+    "latitude":45.439659,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ORTO",
+    "fullname":"S. Cristoforo",
+    "longitude":12.332678,
+    "latitude":45.446015,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"PANT",
+    "fullname":"San Pantaleone",
+    "longitude":12.325099,
+    "latitude":45.435072,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"PAUL",
+    "fullname":"San Francesco di Paula",
+    "longitude":12.354502,
+    "latitude":45.431866,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"PIAP",
+    "fullname":"San Pietro Apostolo",
+    "longitude":12.316435,
+    "latitude":45.316855,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"PIEM",
+    "fullname":"San Pietro Martire",
+    "longitude":12.352535,
+    "latitude":45.454553,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"PIET",
+    "fullname":"San Pietro",
+    "longitude":12.359162,
+    "latitude":45.433591,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"POLO",
+    "fullname":"San Paolo Apostolo",
+    "longitude":12.329657,
+    "latitude":45.436283,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"RAFF1",
+    "fullname":"San Angelo Raffaele",
+    "longitude":12.319028,
+    "latitude":45.431694,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"RAFF2",
+    "fullname":"San Angelo Raffaele",
+    "longitude":12.319393,
+    "latitude":45.431721,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"REDE1",
+    "fullname":"Santissimo Redentore",
+    "longitude":12.332682,
+    "latitude":45.424113,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"REDE2",
+    "fullname":"Santissimo Redentore",
+    "longitude":12.33244,
+    "latitude":45.42414,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"RINA",
+    "fullname":"Santa Caterina",
+    "longitude":12.336796,
+    "latitude":45.442689,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ROCC",
+    "fullname":"San Rocco",
+    "longitude":12.325235,
+    "latitude":45.43638,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ROMI",
+    "fullname":"Eremite di San Giuseppe",
+    "longitude":12.32469,
+    "latitude":45.431305,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"SALU1",
+    "fullname":"Santa Maria della Salute",
+    "longitude":12.334844,
+    "latitude":45.429705,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"SALU2",
+    "fullname":"Santa Maria della Salute",
+    "longitude":12.335056,
+    "latitude":45.429712,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"SALV",
+    "fullname":"Ss. Salvatore",
+    "longitude":12.336898,
+    "latitude":45.435747,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"SAMU",
+    "fullname":"San Samuele Profeta",
+    "longitude":12.328321,
+    "latitude":45.432889,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"SCAL",
+    "fullname":"Santa Maria di Nazareth ",
+    "longitude":12.321998,
+    "latitude":45.440978,
+    "hourly":0,
+    "time":"18:45"
+  },
+  {
+    "name":"SEBA",
+    "fullname":"San Sebastiano",
+    "longitude":12.320007,
+    "latitude":45.431305,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"SILV",
+    "fullname":"San Silvestro",
+    "longitude":12.333405,
+    "latitude":45.436888,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"SIMG",
+    "fullname":"San Simeone Profeta",
+    "longitude":12.324529,
+    "latitude":45.440108,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"SIMP",
+    "fullname":"Santi Simone e Giuda",
+    "longitude":12.322731,
+    "latitude":45.439488,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"SLIO",
+    "fullname":"San Leone IX pp.",
+    "longitude":12.338849,
+    "latitude":45.436937,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"SOFI",
+    "fullname":"Santa Sophia",
+    "longitude":12.335111,
+    "latitude":45.440334,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"STAE",
+    "fullname":"Sant'Eustachio",
+    "longitude":12.330653,
+    "latitude":45.440576,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"STEF",
+    "fullname":"Santo Stefano Profeta",
+    "longitude":12.332151,
+    "latitude":45.432641,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"STEM",
+    "fullname":"Santo Stefano di Murano",
+    "longitude":12.353281,
+    "latitude":45.454693,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"TERE",
+    "fullname":"Santa Teresa",
+    "longitude":12.3163,
+    "latitude":45.432436,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"TOLE",
+    "fullname":"San Nicol� da Tolentino",
+    "longitude":12.322443,
+    "latitude":45.436975,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"TORR",
+    "fullname":"Torre dei Baini",
+    "longitude":12.360443,
+    "latitude":45.457948,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"TRIN",
+    "fullname":"Santissima Trinita",
+    "longitude":12.330852,
+    "latitude":45.42451,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"TROV",
+    "fullname":"Santi Gervasio e Protasio",
+    "longitude":12.326424,
+    "latitude":45.430176,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"VALV",
+    "fullname":"Abbazia di Valverde",
+    "longitude":12.335362,
+    "latitude":45.443424,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"VIDA",
+    "fullname":"S. Vitale",
+    "longitude":12.329753,
+    "latitude":45.431627,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"VIGN",
+    "fullname":"San Francesco de la Vigna",
+    "longitude":12.348848,
+    "latitude":45.437519,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"VISI",
+    "fullname":"Santa Maria della Visitazione",
+    "longitude":12.326975,
+    "latitude":45.429054,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ZACC",
+    "fullname":"San Zaccaria",
+    "longitude":12.34356,
+    "latitude":45.433811,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ZAND",
+    "fullname":"San Giovanni Decollato",
+    "longitude":12.328194,
+    "latitude":45.440871,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ZANI",
+    "fullname":"San Giovanni Nuovo",
+    "longitude":null,
+    "latitude":null,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ZITE1",
+    "fullname":"Santa Maria della Presentazione",
+    "longitude":12.33937,
+    "latitude":45.426345,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ZITE2",
+    "fullname":"Santa Maria della Presentazione",
+    "longitude":12.339226,
+    "latitude":45.426298,
+    "hourly":0,
+    "time":""
+  },
+  {
+    "name":"ZULI",
+    "fullname":"San Giuliano",
+    "longitude":12.3389,
+    "latitude":45.435239,
+    "hourly":0,
+    "time":""
+  }
+]

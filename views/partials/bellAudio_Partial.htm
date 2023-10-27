@@ -1,0 +1,34 @@
+ <!-- BELL CHORUS AUDIO -->
+	<div class="bell-audio-container" ng-show="item.data.Bell_Chorus_Audio && (item.data.Bell_Chorus_Audio != 'Null')">
+
+		<div class="ui icon fluid buttons bellAudio">
+			<button onclick="chorus.play()" class="ui labeled compact icon button">
+		    	<i class="play icon"></i>
+		    	Chorus of Bells
+		    	<audio id="chorus" ng-src="{{item.data.Bell_Chorus_Audio}}"></audio>
+		  	</button>
+
+		  	<button onclick="chorus.pause()" class="ui button">
+	    		<i class="pause icon"></i>
+	  		</button>
+	  	</div>
+
+	</div>
+
+<!-- BELL DATA Repitition-->
+	<div ng-repeat="num in [1,2,3,4,5,6,7,8,9,10,11]">
+
+		<div class="ui fluid icon buttons bellAudio" ng-show="item.data.Bell_{{num}}_Audio && (item.data.Bell_{{num}}_Audio != 'Null')">
+			<button ng-click="playSound('bell' + num)" class="ui labeled compact icon button">
+		    	<i class="play icon"></i>
+		    	Bell {{num}} Audio
+		    	<audio id="bell{{num}}" ng-src="{{item['data']['Bell_'+ num +'_Audio']}}"></audio>
+		  	</button>
+		  	
+		  	<button ng-click="pauseSound('bell' + num)" class="ui button">
+	    		<i class="pause icon"></i>
+	  		</button>
+	  	</div>
+
+	</div>
+<!-- END BELL DATA Repitition

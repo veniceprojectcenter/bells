@@ -1,0 +1,21 @@
+<div class="ui stackable grid">
+	<div class="eight wide column bell-model-container">
+		<div class="bellModel-container" ng-show="item.data.Belfry_Model && (item.data.Belfry_Model != 'Null')">
+			<H3>Belfry 3D Model</H3>
+			<p ng-show="0"><a href="{{item.data.Belfry_Model}}" target="_blank">Click here</a>  to view a 3D Model of the belfry.</p>
+			<iframe class="bell-model" width="300" height="380" ng-src="{{item.data.Belfry_Model | trusted}}" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" class="lazyload"></iframe>
+		</div>
+	</div>	
+
+	<!-- BELL DATA Repitition-->
+		<div class="eight wide column bell-model-container" ng-repeat="num in [1,2,3,4,5,6,7,8,9,10,11]" 
+			ng-show="item.data.Bell_{{num}}_Model && (item.data.Bell_{{num}}_Model != 'Null')"
+		>
+			<div class="bellModel-container">
+				<H3>Bell {{num}} Model</H3>
+				<p ng-show="0"><a href="{{item['data']['Bell_'+ num +'_Model']}}" target="_blank">Click here</a>  to view a 3D Model of this bell.</p>
+				<iframe class="bell-model" width="300" height="380" ng-src="{{item['data']['Bell_'+ num +'_Model'] | trusted}}" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" class="lazyload"></iframe>
+			</div>
+		</div>
+	<!-- END BELL DATA Repitition-->
+</div>

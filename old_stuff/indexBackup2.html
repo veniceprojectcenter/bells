@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!--VeniceBells.com
+@author: Madalyn Coryea
+@modified: 12/11/2012 -->
+<head>
+<title>Venice Bells</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<script pagespeed_no_defer>//<![CDATA[
+(function(){var d=window,e=document,f="getItem",m="getData",p="localStorage",q="indexOf",r="length",t="prototype",u="substring",w="",x=" ",y=",",z="; expires=",A="=",B="_GPSLSC=",C="img",D="link",E="load",F="on",G="pagespeed_lsc_expiry",H="pagespeed_lsc_hash",I="pagespeed_lsc_url",J="pagespeed_lsc_url:",K="script",L="style",M="stylesheet",N="text/css";d.pagespeed=d.pagespeed||{};var O=d.pagespeed,P=function(){this.a=!0};P[t].b=function(a){a=parseInt(a[u](0,a[q](x)),10);return!isNaN(a)&&a<=Date.now()};
+P[t].hasExpired=P[t].b;P[t].getData=function(a){return a[u](a[q](x,a[q](x)+1)+1)};P[t].getData=P[t][m];P[t].c=function(a){var b=e.getElementsByTagName(K),b=b[b[r]-1];b.parentNode.replaceChild(a,b)};P[t].replaceLastScript=P[t].c;P[t].h=function(a){var b=d[p][f](J+a),c=e.createElement(b?L:D);b&&!this.b(b)?(c.type=N,c.appendChild(e.createTextNode(this[m](b)))):(c.rel=M,c.href=a,this.a=!0);this.c(c)};P[t].inlineCss=P[t].h;
+P[t].i=function(a){var b=d[p][f](J+a),c=e.createElement(C);b&&!this.b(b)?c.src=this[m](b):(c.src=a,this.a=!0);for(var b=1,g=arguments[r];b<g;++b){var k=arguments[b][q](A);c.setAttribute(arguments[b][u](0,k),arguments[b][u](k+1))}this.c(c)};P[t].inlineImg=P[t].i;
+P[t].e=function(a,b){for(var c=e.getElementsByTagName(a),g=0,k=c[r];g<k;++g){var h=c[g],v=h.getAttribute(H),l=h.getAttribute(I);if(v&&l){var l=J+l,n=h.getAttribute(G),n=n?(new Date(n)).getTime():w,h=b(h);if(!h){var s=d[p][f](l);s&&(h=this[m](s))}h&&(d[p].setItem(l,n+x+v+x+h),this.a=!0)}}};P[t].g=function(){this.e(C,function(a){return a.src});this.e(L,function(a){return a.firstChild?a.firstChild.nodeValue:null})};
+P[t].f=function(){if(this.a){for(var a=[],b=[],c=0,g=Date.now(),k=0,h=d[p][r];k<h;++k){var v=d[p].key(k);if(!v[q](J)){var l=d[p][f](v),n=l[q](x),s=parseInt(l[u](0,n),10);if(!isNaN(s))if(s<=g){a.push(v);continue}else if(s<c||0==c)c=s;b.push(l[u](n+1,l[q](x,n+1)))}}g=w;c&&(g=z+(new Date(c)).toUTCString());e.cookie=B+b.join(y)+g;k=0;for(h=a[r];k<h;++k)d[p].removeItem(a[k]);this.a=!1}};
+O.d=function(a,b,c){if(a.addEventListener)a.addEventListener(b,c,!1);else if(a.attachEvent)a.attachEvent(F+b,c);else{var g=a[F+b];a[F+b]=function(){c.call(this);g&&g.call(this)}}};O.j=function(){if(d[p]){var a=new P;O.localStorageCache=a;O.d(d,E,function(){a.g()});O.d(d,E,function(){a.f()})}};O.localStorageCacheInit=O.j;})();
+pagespeed.localStorageCacheInit();
+//]]></script><link href="vb_stylesheet.css" rel="stylesheet" type="text/css" pagespeed_lsc_url="http://venicebells.com/vb_stylesheet.css">
+<link href="jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet" pagespeed_lsc_url="http://venicebells.com/jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.css"><style>.scroll-pane{overflow:auto;width:99%;float:left}.scroll-content{width:2000px;float:left}.scroll-content-item{width:80px;height:30px;float:left;margin:0px;font-size:12pt;line-height:30px;text-align:center}* html .scroll-content-item{display:inline}.scroll-bar-wrap{clear:left;padding:0 4px 0 2px;margin:0 -1px -1px -1px}.scroll-bar-wrap .ui-slider{background:none;border:0;height:2em;margin:0 auto}.scroll-bar-wrap .ui-handle-helper-parent{position:relative;width:100%;height:100%;margin:0 auto}.scroll-bar-wrap .ui-slider-handle{top:.2em;height:1.5em}.scroll-bar-wrap .ui-slider-handle .ui-icon{margin:-8px auto 0;position:relative;top:50%}</style><script type="text/javascript" src="active_tab.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCHdS-gcLBZYk6ApwNSR4-qowtOEU481Ik&amp;sensor=false"></script>
+<script type="text/javascript" src="maps.js"></script>
+<script type="text/javascript" src="jquery-ui-1.9.2.custom/js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.js"></script>
+<script>$(function(){$("#slider").slider();});</script>
+<script>$(function(){var scrollPane=$(".scroll-pane"),scrollContent=$(".scroll-content");var scrollbar=$(".scroll-bar").slider({slide:function(event,ui){if(scrollContent.width()>scrollPane.width()){scrollContent.css("margin-left",Math.round(ui.value/100*(scrollPane.width()-scrollContent.width()))+"px");}else{scrollContent.css("margin-left",0);}}});var handleHelper=scrollbar.find(".ui-slider-handle").mousedown(function(){scrollbar.width(handleHelper.width());}).mouseup(function(){scrollbar.width("100%");}).append("<span class='ui-icon ui-icon-grip-dotted-vertical'></span>").wrap("<div class='ui-handle-helper-parent'></div>").parent();scrollPane.css("overflow","hidden");function sizeScrollbar(){var remainder=scrollContent.width()-scrollPane.width();var proportion=remainder/scrollContent.width();var handleSize=scrollPane.width()-(proportion*scrollPane.width());scrollbar.find(".ui-slider-handle").css({width:handleSize,"margin-left":-handleSize/2});handleHelper.width("").width(scrollbar.width()-handleSize);}
+function resetValue(){var remainder=scrollPane.width()-scrollContent.width();var leftVal=scrollContent.css("margin-left")==="auto"?0:parseInt(scrollContent.css("margin-left"));var percentage=Math.round(leftVal/remainder*100);scrollbar.slider("value",percentage);}
+function reflowContent(){var showing=scrollContent.width()+parseInt(scrollContent.css("margin-left"),10);var gap=scrollPane.width()-showing;if(gap>0){scrollContent.css("margin-left",parseInt(scrollContent.css("margin-left"),10)+gap);}}
+$(window).resize(function(){resetValue();sizeScrollbar();reflowContent();});setTimeout(sizeScrollbar,10);});</script>
+</head>
+<body class="home_tab"><noscript><meta HTTP-EQUIV="refresh" content="0;url='http://venicebells.com/?ModPagespeed=noscript'" /><style><!--table,div,span,font,p{display:none} --></style><div style="display:block">Please click <a href="http://venicebells.com/?ModPagespeed=noscript">here</a> if you are not redirected within a few seconds.</div></noscript>
+<div class="nav">
+<a id="home_tab" class="menu" href="index.html">Home</a>
+<a id="bells_tab" class="menu" href="bells.html">Bells</a>
+<!--a id="gallery_tab" class="menu" href="gallery.html">Gallery</a>
+		<a id="appDownload_tab" class="menu" href="appDownload.html">App Download</a-->
+<a id="projectLinks_tab" class="menu" href="projectLinks.html">Project Links</a>
+<a id="team_tab" class="menu" href="team.html">Team</a>
+</div>
+<div class="header">
+<a href="index.html"><img src="Images/heading_9_logo.png" alt="header" height=100/ pagespeed_lsc_url="http://venicebells.com/Images/heading_9_logo.png"></a>
+</div>
+<div class="main">
+<div id="localTime"></div>
+<center>
+<div id="map"></div>
+</center>
+<div class="slider-group">
+<span class="slider-label">
+<label>Day Selected: </label> <label id="dayslider-value">Sunday</label>
+</span>
+<div id="dayslider" class="slider">
+<div class="colored_slider" id="dayslider-color"></div>
+</div>
+</div>
+<div class="slider-group">
+<span class="slider-label">
+<label> Time Selected: </label> <label id="minslider-value">12:00 AM</label>
+</span>
+<div id="minslider" class="slider">
+<div class="colored_slider" id="minslider-color"></div>
+</div>
+</div>
+<br/>
+<form>
+<input id="ringPlease" type="checkbox" checked="yes"/><label>Bells On</label>
+</form>
+<span id="ringer"></span>
+</div>
+<footer align="center">
+<br/>
+VeniceBells.com &copy; 2012<br/>
+Created by <a href="http://madalyncoryea.com">Madalyn Coryea</a> and Lauren Kahn
+</footer>
+</body>
+</html>

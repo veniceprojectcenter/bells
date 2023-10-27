@@ -1,0 +1,31 @@
+<div>
+	<table style="width: 100%" class="data-table">
+		<thead>
+			<tr>
+				<h3>Technical Information</h3>
+				<!-- <th class="four wide">Technical Information</th> -->
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-show="item['data']['Tower height_m'] && item['data']['Tower height_m'] != 'Null'">
+				<td><span style="display:inline;" class="key">Tower Height (m)</span></td>
+				<td><span style="display:inline;" class="value">{{item['data']['Tower height_m']}}</span></td>
+			</tr>
+
+			<tr ng-show="item['data']['Latitude'] && item['data']['Latitude'] != 'Null'">
+				<td><span style="display:inline;" class="key">Latitude</span></td>
+				<td><span style="display:inline;" class="value">{{item['data']['Latitude']}}</span></td>
+			</tr>
+
+			<tr ng-show="item['data']['Longitude'] && item['data']['Longitude'] != 'Null'">
+				<td><span style="display:inline;" class="key">Longitude</span></td>
+				<td><span style="display:inline;" class="value">{{item['data']['Longitude']}}</span></td>
+			</tr>
+			
+			<tr ng-show="item['data']['Material'] && item['data']['Material'] != 'Null'">
+				<td><span style="display:inline;" class="key">Building Material</span></td>
+				<td><span style="display:inline;" class="value">{{item['data']['Material']}}</span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

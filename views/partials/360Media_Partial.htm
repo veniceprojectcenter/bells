@@ -1,0 +1,24 @@
+<div ng-show="item.data.360_Belfry_Link && (item.data.360_Belfry_Link != 'Null')">
+	<div>
+		<blockquote data-width="1000" data-height="375" class="fluid-frame ricoh-theta-spherical-image" >Post from RICOH THETA. - <a ng-href="{{item.data.360_Belfry_Link | trusted}}" target="_blank">Spherical Image - RICOH THETA</a></blockquote>
+		<!-- <script async type="text/javascript-lazy" src="https://theta360.com/widgets.js" charset="utf-8"></script> -->
+
+		<div class="ui section divider"></div>
+	</div>
+
+	<script type="text/javascript-lazy">
+		/* 
+			TEMPORARY FIX: Ricoh script is running before {{item.data.360_Belfry_Link | trusted}} is loaded
+			the result of the problem is that the ricoh image doesn't load up.
+
+			This temporary fix makes the ricoh script wait 2 seconds before running
+		*/
+
+
+		$(document).ready(function() {
+		    setTimeout(function(){
+		        $('<script async type="text/javascript-lazy" src="https://theta360.com/widgets.js" charset="utf-8"></' + 'script>').appendTo(document.body);
+		    },1000);  // 2000 is the delay in milliseconds
+		});
+	</script>
+</div>

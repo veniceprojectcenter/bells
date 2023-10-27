@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--VeniceBells.com
+@author: Madalyn Coryea
+@modified: 12/11/2012 -->
+<head>
+        <title>Bells!</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link href="vb_stylesheet.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="bells.js"></script>
+</head>
+
+<body>
+        <div class="nav">
+                <a id="home_tab" class="menu" href="index.html" onclick="press_tab_1()">Home</a>
+                <a id="bells_tab" class="menu" href="bells.html">Bells</a>
+                <!--a id="gallery_tab" class="menu" href="gallery.html" onclick="press_tab_2()">Gallery</a>
+                <a id="appDownload_tab" class="menu" href="appDownload.html">App Download</a-->
+                <a id="projectLinks_tab" class="menu" href="projectLinks.html">Project Links</a>
+                <a id="team_tab" class="menu" href="team.html">Team</a>
+        </div>
+        
+        <div class="header">
+                <img src="Images/heading_9_logo.png" alt="header" height=100/>
+        </div>
+        
+        <div class="main">
+        <p>The Bells of San Giorgio</p>
+        <div id="allBells" align="right">
+                <a class="bells" href='#'>
+                        <img class="bells" src="Images/bellIcon.png" alt="C1" width=60 height=60 onclick="play('Sounds/GIMA_2012_C1.mp3','bellsound_c'); return false;"/>
+                </a>
+                <a class="bells" href='#'>
+                        <img class="bells" src="Images/bellIcon.png" alt="C2" width=80 height=80 onclick="play('Sounds/GIMA_2012_C2.mp3','bellsound_d'); return false;"/>
+                </a>
+                <a class="bells" href='#'>
+                        <img class="bells" src="Images/bellIcon.png" alt="C3" width=100 height=100 onclick="play('Sounds/GIMA_2012_C3.mp3','bellsound_e'); return false;"/>
+                </a>
+                <a class="bells" href='#'>
+                        <img class="bells" src="Images/bellIcon.png" alt="C6" width=120 height=120 onclick="play('Sounds/GIMA_2012_C6.mp3','bellsound_a'); return false;"/>
+                </a>
+                <a class="bells" href='#'>
+                        <img class="bells" src="Images/bellIcon.png" alt="C7" width=120 height=120 onclick="play('Sounds/GIMA_2012_C7.mp3','bellsound_b'); return false;"/>
+                </a>
+                <a class="bells" href='#'>
+                        <img class="bells" src="Images/bellIcon.png" alt="C4" width=130 height=130 onclick="play('Sounds/GIMA_2012_C4.mp3','bellsound_f'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C8" width=140 height=140 onclick="play('Sounds/GIMA_2012_C8.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C9" width=160 height=160 onclick="play('Sounds/GIMA_2012_C9.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href='#'>
+                        <img class="bells" src="Images/bellIcon.png" alt="C5" width=170 height=170 onclick="play('Sounds/GIMA_2012_C5.mp3','bellsound_g'); return false;"/>
+                </a>
+                
+        </div>
+        <p>The Bells of Torcello</p>
+        <div align="right">
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C3" width=120 height=120 onclick="play('Sounds/ASST_2012_C3.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C1" width=140 height=140 onclick="play('Sounds/ASST_2012_C1.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C2" width=160 height=160 onclick="play('Sounds/ASST_2012_C2.mp3','bellsound_c2'); return false;"/>
+                </a>
+        </div>
+        <p>The Bells of San Giobbe</p>
+        <div align="right">
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C2" width=60 height=60 onclick="play('Sounds/GIOB_2012_C2.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C1" width=120 height=120 onclick="play('Sounds/GIOB_2012_C1.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C3" width=140 height=140 onclick="play('Sounds/GIOB_2012_C3.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C4" width=160 height=160 onclick="play('Sounds/GIOB_2012_C4.mp3','bellsound_c2'); return false;"/>
+                </a>
+        </div>
+        <p>The Bell of Sant'Apollinare</p>
+        <div align="right">
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C3" width=120 height=120 onclick="play('Sounds/APONC3_2012_audio_hitonce.mp3','bellsound_c2'); return false;"/>
+                </a>
+        </div>
+        <p>The Bells of San Bartolomeo</p>
+        <div align="right">
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C1" width=60 height=60 onclick="play('Sounds/BARTC1_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C2" width=120 height=120 onclick="play('Sounds/BARTC2_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C3" width=140 height=140 onclick="play('Sounds/BARTC3_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C4" width=160 height=160 onclick="play('Sounds/BARTC4_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+        </div>
+        <p>The Bell of San Marco</p>
+        <div align="right">
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C1" width=120 height=120 onclick="play('Sounds/BASICC_2012_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+        </div>
+        <p>The Bell of San Marcuola</p>
+        <div align="right">
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C1" width=120 height=120 onclick="play('Sounds/MARCCC_2012_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+        </div>
+        <p>The Bells of San Michele</p>
+        <div align="right">
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C1" width=60 height=60 onclick="play('Sounds/MICHC1_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C2" width=120 height=120 onclick="play('Sounds/MICHC2_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C3" width=140 height=140 onclick="play('Sounds/MICHC3_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C4" width=160 height=160 onclick="play('Sounds/MICHC4_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+        </div>
+        <p>The Bells of San Salvador</p>
+        <div align="right">
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C1" width=60 height=60 onclick="play('Sounds/SALVC1_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C2" width=120 height=120 onclick="play('Sounds/SALVC2_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C3" width=140 height=140 onclick="play('Sounds/SALVC3_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C4" width=160 height=160 onclick="play('Sounds/SALVC4_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C5" width=140 height=140 onclick="play('Sounds/SALVC5_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C6" width=160 height=160 onclick="play('Sounds/SALVC6_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+        </div>
+        <p>The Bells of San Stae</p>
+        <div align="right">
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C1" width=60 height=60 onclick="play('Sounds/STAEC1_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C2" width=120 height=120 onclick="play('Sounds/STAEC2_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C3" width=140 height=140 onclick="play('Sounds/STAEC3_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C4" width=160 height=160 onclick="play('Sounds/STAEC4_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+        </div>
+        <p>The Bell of La Vigna</p>
+        <div align="right">
+                <a class="bells" href="#">
+                        <img class="bells" src="Images/bellIcon.png"  alt="C1" width=120 height=120 onclick="play('Sounds/VIGNCC_audio.mp3','bellsound_c2'); return false;"/>
+                </a>
+        </div>
+        <footer align="center">
+        <br/>
+        VeniceBells.com &copy; 2013<br/>
+        Created by <a href="http://madalyncoryea.com">Madalyn Coryea</a> and Lauren Kahn
+        </footer>       
+        <span id="bellsound_c"></span>
+        <span id="bellsound_d"></span>
+        <span id="bellsound_e"></span>
+        <span id="bellsound_f"></span>
+        <span id="bellsound_g"></span>
+        <span id="bellsound_a"></span>
+        <span id="bellsound_b"></span>
+        <span id="bellsound_c2"></span>
+        </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--VeniceBells.com
+@author: Madalyn Coryea
+@modified: 12/11/2012 -->
+<head>
+	<title>Bells!</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="vb_stylesheet.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="bells.js"></script>
+</head>
+
+<body>
+	<div class="nav">
+		<a id="home_tab" class="menu" href="index.html" onclick="press_tab_1()">Home</a>
+		<a id="bells_tab" class="menu" href="bells.html">Bells</a>
+		<!--a id="gallery_tab" class="menu" href="gallery.html" onclick="press_tab_2()">Gallery</a>
+		<a id="appDownload_tab" class="menu" href="appDownload.html">App Download</a-->
+		<a id="projectLinks_tab" class="menu" href="projectLinks.html">Project Links</a>
+		<a id="team_tab" class="menu" href="team.html">Team</a>
+	</div>
+	
+	<div class="header">
+		<img src="Images/heading_9_logo.png" alt="header" height=100/>
+	</div>
+	
+	<div class="main">
+	<p>The Bells of San Giorgio</p>
+	<div id="allBells" align="center">
+		<a class="bells" href='#'>
+			<img class="bells" src="Images/bellIcon.png" alt="C1" width=60 height=60 onclick="play('Sounds/GIMA_2012_C1.mp3','bellsound_c');"/>
+		</a>
+		<a class="bells" href='#'>
+			<img class="bells" src="Images/bellIcon.png" alt="C2" width=80 height=80 onclick="play('Sounds/GIMA_2012_C2.mp3','bellsound_d');"/>
+		</a>
+		<a class="bells" href='#'>
+			<img class="bells" src="Images/bellIcon.png" alt="C3" width=100 height=100 onclick="play('Sounds/GIMA_2012_C3.mp3','bellsound_e');"/>
+		</a>
+		<a class="bells" href='#'>
+			<img class="bells" src="Images/bellIcon.png" alt="C6" width=120 height=120 onclick="play('Sounds/GIMA_2012_C6.mp3','bellsound_a');"/>
+		</a>
+		<a class="bells" href='#'>
+			<img class="bells" src="Images/bellIcon.png" alt="C7" width=120 height=120 onclick="play('Sounds/GIMA_2012_C7.mp3','bellsound_b');"/>
+		</a>
+		<a class="bells" href='#'>
+			<img class="bells" src="Images/bellIcon.png" alt="C4" width=130 height=130 onclick="play('Sounds/GIMA_2012_C4.mp3','bellsound_f');"/>
+		</a>
+		<a class="bells" href="#">
+			<img class="bells" src="Images/bellIcon.png"  alt="C8" width=140 height=140 onclick="play('Sounds/GIMA_2012_C8.mp3','bellsound_c2');"/>
+		</a>
+		<a class="bells" href="#">
+			<img class="bells" src="Images/bellIcon.png"  alt="C9" width=160 height=160 onclick="play('Sounds/GIMA_2012_C9.mp3','bellsound_c2');"/>
+		</a>
+		<a class="bells" href='#'>
+			<img class="bells" src="Images/bellIcon.png" alt="C5" width=170 height=170 onclick="play('Sounds/GIMA_2012_C5.mp3','bellsound_g');"/>
+		</a>
+		
+	</div>
+	<p>The Bells of Torcello</p>
+	<div align="center">
+		<a class="bells" href="#">
+			<img class="bells" src="Images/bellIcon.png"  alt="C3" width=120 height=120 onclick="play('Sounds/ASST_2012_C3.mp3','bellsound_c2');"/>
+		</a>
+		<a class="bells" href="#">
+			<img class="bells" src="Images/bellIcon.png"  alt="C1" width=140 height=140 onclick="play('Sounds/ASST_2012_C1.mp3','bellsound_c2');"/>
+		</a>
+		<a class="bells" href="#">
+			<img class="bells" src="Images/bellIcon.png"  alt="C2" width=160 height=160 onclick="play('Sounds/ASST_2012_C2.mp3','bellsound_c2');"/>
+		</a>
+	</div>
+	<p>The Bells of San Giobbe</p>
+	<div align="center">
+		<a class="bells" href="#">
+			<img class="bells" src="Images/bellIcon.png"  alt="C2" width=60 height=60 onclick="play('Sounds/GIOB_2012_C2.mp3','bellsound_c2');"/>
+		</a>
+		<a class="bells" href="#">
+			<img class="bells" src="Images/bellIcon.png"  alt="C1" width=120 height=120 onclick="play('Sounds/GIOB_2012_C1.mp3','bellsound_c2');"/>
+		</a>
+		<a class="bells" href="#">
+			<img class="bells" src="Images/bellIcon.png"  alt="C3" width=140 height=140 onclick="play('Sounds/GIOB_2012_C3.mp3','bellsound_c2');"/>
+		</a>
+		<a class="bells" href="#">
+			<img class="bells" src="Images/bellIcon.png"  alt="C4" width=160 height=160 onclick="play('Sounds/GIOB_2012_C4.mp3','bellsound_c2');"/>
+		</a>
+	</div>
+	<footer align="center">
+	<br/>
+	VeniceBells.com &copy; 2012<br/>
+	Created by <a href="http://madalyncoryea.com">Madalyn Coryea</a>
+	</footer>	
+	<span id="bellsound_c"></span>
+	<span id="bellsound_d"></span>
+	<span id="bellsound_e"></span>
+	<span id="bellsound_f"></span>
+	<span id="bellsound_g"></span>
+	<span id="bellsound_a"></span>
+	<span id="bellsound_b"></span>
+	<span id="bellsound_c2"></span>
+	</div>
+</body>
+</html>

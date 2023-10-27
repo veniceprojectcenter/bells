@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>Belltower Control</title>
+	<meta name="viewport" content="width=device-width">
+	<script src='https://cdn.firebase.com/v0/firebase.js'></script>
+	<script>
+		var rotationEnabled = false,
+			panoramaEnabled = false,
+			rootRef = new Firebase('https://vpc.firebaseio.com/presentation/bellPanorama'),
+			rotationRef = rootRef.child('rotateBelltower'),
+			orientationRef = rootRef.child('orientation'),
+			panoRef = rootRef.child('panoramaVisible'),
+			soundRef = rootRef.child('playSound'),
+			rotationButton, panoButton;
+		
+		function init() {
+			window.addEventListener("deviceorientation", orientationChanged, true);
+			rotationButton = document.getElementById('rotation-button');
+			panoButton = document.getElementById('pano-button');
+
+			panoRef.on('value', function(snap) {
+				panoramaEnabled = snap.val();
+				panoButton.innerHTML =
+					panoramaEnabled ? "hide panorama" : "show panorama";
+			});
+
+			rotationRef.on('value', function(snap) {
+				rotationEnabled = snap.val();
+				rotationButton.innerHTML =
+					rotationEnabled ? "disable rotation" : "enable rotation";
+			});
+
+			//reset play button
+			soundRef.on('value', function(snap) {
+				if (snap.val()) soundRef.set(false);
+			});
+		}
+
+		function toggleRotation() {
+			rotationRef.set(!rotationEnabled);
+		}
+
+		function triggerBellSound() {
+			soundRef.set(true);
+		}
+
+		function togglePanorama() {
+			panoRef.set(!panoramaEnabled);
+		}
+
+		function orientationChanged(e) {
+			if (rotationEnabled) {
+				console.log(e);
+				var deviceRoll = e.gamma,
+					devicePitch = e.beta,
+					deviceHeading = e.alpha ? (e.alpha - window.orientation) % 360 : null;
+				// ios alpha is relative--use webkitCompassHeading instead
+				if (deviceHeading && e.webkitCompassHeading) {
+					deviceHeading = (e.webkitCompassHeading + window.orientation) % 360;
+				}
+
+				console.log("device roll:", deviceRoll, "pitch", devicePitch, "heading", deviceHeading);
+				console.log("camera roll:", devicePitch, "tilt", deviceRoll);
+
+				orientationRef.set({
+					roll: deviceRoll,
+					pitch: devicePitch,
+					heading: deviceHeading
+				});
+			}
+		}	
+	</script>
+	<style type="text/css">
+
+		.button {
+			margin: 25px auto;
+			padding: 30px 12px;
+			width: 80%;
+			text-align: center;
+			color: white;
+			font-family: sans-serif;
+			letter-spacing: 1px;
+		}
+
+		.orange {
+			background: #FF6A00;
+		}
+
+		.green {
+			background: #00A08A;
+		}
+
+		.purple {
+			background: #7E07A9;
+		}
+
+		.button:active {
+			background: rgb(220,220,220);
+		}
+
+	</style>
+</head>
+<body onload="init();">
+	<div class="button purple" id="pano-button" onclick="togglePanorama();"></div>
+	<div class="button green" id="rotation-button" onclick="toggleRotation();"></div>
+	<div class="button orange" onclick="triggerBellSound();">play bell sound</div>
+</body>
+</html>

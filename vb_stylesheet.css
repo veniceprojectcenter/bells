@@ -1,0 +1,190 @@
+/*
+VeniceBells.com
+@author: Madalyn Coryea
+@modified: 12/11/2012
+*/
+p {color: gray; font-family: Georgia,serif;}
+ul {color: gray; font-family: Georgia,serif;}
+p.a {color: gray; font-family: Georgia,serif; text-align: center; height:100%; margin-top: 550px;}
+h1 {color: gray; font-family: Lucida Sans Unicode, "Lucida Grande", sans-serif; margin-top:40px; font-size: 30pt; text-transform:uppercase;}
+h2 {color: gray; font-family: Georgia,serif;}
+label {color: gray; font-family: Georgia,serif;}
+img.group {	border-style: solid;
+			border-width: 3px;
+			border-color: gray;}
+body {	background-image: url('Images/deBarbari3.png');
+		background-repeat: no-repeat; 
+		background-size: 100% 100%; 
+		background-attachment: fixed;
+		padding: 20px;}
+footer {color: gray; font-family: Georgia,serif; font-size: 10pt;}
+		
+a:link {color: black; text-decoration:none; font-family:Georgia,serif; /*padding:5px;*/}
+a:visited {color: purple; text-decoration:none;}
+a:hover {color: red;}
+a:active {color: black;}
+a:focus, a:active
+{
+color:green;
+}
+
+.bg_main{
+	background-image:url('Images/pixel4.png'); 
+	background-repeat:repeat;
+	margin-left:50px; 
+	margin-right:50px; 
+	margin-top:-30px;
+	margin-bottom:-100px;
+	padding-left:-5px; 
+	padding-right:-5px; 
+	padding-top:5px;
+	padding-bottom:-100px;
+	min-height: 600px;
+	overflow: hidden;
+	}
+
+.main{
+	margin-top: 120px;
+}
+
+.nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	/*height: 15px;*/
+	width: 100%;
+	margin-bottom: 10px;
+	background-image: url('Images/navbar2.png'); 
+	/*background-color: gray;*/
+	text-align: left;
+	/*padding-bottom: 25px;*/
+	border-style:solid;
+	border-width:1px;
+}
+
+/*nav #active{color:black;}*/
+
+a.menu:link{
+	color: white;
+	font-family: Lucida Sans Unicode, "Lucida Grande", sans-serif;
+	text-transform: uppercase;
+	font-size: 18pt;
+	margin-left:-5px;
+	/*padding-top:5px;*/
+	padding-left:15px;
+	padding-right:15px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+a.menu:visited{
+	color: white;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+a.menu:hover{
+	color: #68BEE8;
+	background-color:black;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+
+#allBells{
+
+}
+
+a.menu:active{
+	color:red;
+}
+
+a.bells:link{
+	text-decoration: none;
+}
+a.bells:visited{
+	text-decoration: none;
+	padding: 0px;
+}
+a.bells:hover{
+}
+a.bells:active{
+}
+
+img.bells{
+	margin:0px;
+	padding:0px;
+}
+
+.header{
+	background-image: url('Images/heading_2.png'); 
+	height: 100px;
+	background-repeat: repeat-x;
+	width:100%;
+	position: absolute;
+	left: 0;
+}
+
+.logo{
+	margin-top:10px;
+	position:fixed;
+	left:0;
+}
+
+#localTime{
+	font-weight: bold;
+	/*font-size: 20pt;*/
+}
+
+.times{
+	background-color: #68BEE8;
+	padding: 5px;
+	border-spacing: 0px;
+}
+
+.times tr, td{
+	border: 1;
+	border-width: 2px;
+	border-style: solid;
+	border-color: gray;
+	background-color: black;
+	font-family: Georgia,serif;
+	color: gray;
+	padding: 5px;
+	/*margin-right: -15px;*/
+}
+
+ #map {
+	width:100%;
+	height:500px;
+ }
+
+ .colored_slider {
+ 	display: block;
+	/*font-size: 0.7em;*/
+	position: absolute;
+	z-index: 1;
+	background-color: #68BEE8;
+	top: 0;
+	left: 0;
+	height: 100%;
+ }
+
+ .slider {
+ 	width:80%;
+ 	display:inline-block;
+ 	margin-left: 10px;
+ }
+
+ .slider-group {
+ 	margin-top: 20px;
+ }
+
+ .slider-label {
+ 	width: 200px;
+ 	display:inline-block;
+ }
+
+
+

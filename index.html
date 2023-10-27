@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="en" ng-app="bellsapp">
+	<head>
+		<title>Venice Bells</title>
+		<link rel="shortcut icon" type="image/x-icon" href="bells_icons/newIcon.ico">
+	    <link rel="apple-touch-icon" href="bells_icons/bellTowerIcon.ico" />
+
+
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <meta name="format-detection" content="telephone=no" />
+		
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/font.css"/>
+		
+		<!-- Firebase -->
+		<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+		
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<!-- Leaflet -->
+		<script src="https://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+		<link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+		
+		<!-- bootstrap -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+		<script type='text/javascript' src='js/bootstrap.min.js'></script>
+		
+		<!-- angularjs -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script src="https://code.angularjs.org/1.2.0/angular-route.min.js"></script>
+		<script src="https://code.angularjs.org/1.2.0/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-leaflet-directive/0.10.0/angular-leaflet-directive.min.js"></script>
+		
+		<!-- angular slider -->
+		<link rel="stylesheet" type="text/css" href="css/angular-slider.min.css"/>
+		<script type='text/javascript' src='js/angular-slider.min.js'></script>
+		
+		<!-- spinner -->
+		<script type='text/javascript' src='js/spin.min.js'></script>
+		<script type='text/javascript' src='js/jquery.spin.js'></script>
+		
+		<!-- local css -->
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/moreinfo.css"/>
+		
+		<!-- console library -->
+		<script type='text/javascript' src='js/ck-console.js'></script>
+		
+		<script type='text/javascript' src='js/app.js'></script>
+		<script type='text/javascript' src='js/map.js'></script>
+		<script type='text/javascript' src='js/more-info.js'></script>
+
+		<!-- lazyload library -->
+		<script src="lazyload/lazysizes.min.js" async=""></script>
+
+		<!-- semantic ui -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47662945-1']);
+  _gaq.push(['_setDomainName', 'veniceprojectcenter.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</head>
+	<body id="body" ng-view>
+	</body>
+</html>

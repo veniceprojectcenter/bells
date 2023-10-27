@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--VeniceBells.com
+@author: Madalyn Coryea
+@modified: 12/11/2012 -->
+<head>
+	<title>Venice Bells</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="vb_stylesheet.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="active_tab.js"></script>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCHdS-gcLBZYk6ApwNSR4-qowtOEU481Ik&amp;sensor=false">
+	</script>
+	<script type="text/javascript" src="map2.js"></script>
+	
+	<link href="jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+	<script type="text/javascript" src="jquery-ui-1.9.2.custom/js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.js"></script>
+	
+	<script>
+    $(function() {
+        $( "#slider" ).slider();
+    });
+    </script> 
+	
+	<style>
+    .scroll-pane { overflow: auto; width: 99%; float:left; }
+    .scroll-content { width: 2000px; float: left; }
+    .scroll-content-item { width: 80px; height: 30px; float: left; margin: 0px; font-size: 12pt; line-height: 30px; text-align: center; }
+    * html .scroll-content-item { display: inline; } /* IE6 float double margin bug */
+    .scroll-bar-wrap { clear: left; padding: 0 4px 0 2px; margin: 0 -1px -1px -1px; }
+    .scroll-bar-wrap .ui-slider { background: none; border:0; height: 2em; margin: 0 auto; }
+    .scroll-bar-wrap .ui-handle-helper-parent { position: relative; width: 100%; height: 100%; margin: 0 auto; }
+    .scroll-bar-wrap .ui-slider-handle { top:.2em; height: 1.5em; }
+    .scroll-bar-wrap .ui-slider-handle .ui-icon { margin: -8px auto 0; position: relative; top: 50%; }
+    </style>
+   
+   <script>
+    $(function() {
+        //scrollpane parts
+        var scrollPane = $( ".scroll-pane" ),
+            scrollContent = $( ".scroll-content" );
+         
+        //build slider
+        var scrollbar = $( ".scroll-bar" ).slider({
+            slide: function( event, ui ) {
+                if ( scrollContent.width() > scrollPane.width() ) {
+                    scrollContent.css( "margin-left", Math.round(
+                        ui.value / 100 * ( scrollPane.width() - scrollContent.width() )
+                    ) + "px" );
+                } else {
+                    scrollContent.css( "margin-left", 0 );
+                }
+            }
+        });
+         
+        //append icon to handle
+        var handleHelper = scrollbar.find( ".ui-slider-handle" )
+        .mousedown(function() {
+            scrollbar.width( handleHelper.width() );
+        })
+        .mouseup(function() {
+            scrollbar.width( "100%" );
+        })
+        .append( "<span class='ui-icon ui-icon-grip-dotted-vertical'></span>" )
+        .wrap( "<div class='ui-handle-helper-parent'></div>" ).parent();
+         
+        //change overflow to hidden now that slider handles the scrolling
+        scrollPane.css( "overflow", "hidden" );
+         
+        //size scrollbar and handle proportionally to scroll distance
+        function sizeScrollbar() {
+            var remainder = scrollContent.width() - scrollPane.width();
+            var proportion = remainder / scrollContent.width();
+            var handleSize = scrollPane.width() - ( proportion * scrollPane.width() );
+            scrollbar.find( ".ui-slider-handle" ).css({
+                width: handleSize,
+                "margin-left": -handleSize / 2
+            });
+            handleHelper.width( "" ).width( scrollbar.width() - handleSize );
+        }
+         
+        //reset slider value based on scroll content position
+        function resetValue() {
+            var remainder = scrollPane.width() - scrollContent.width();
+            var leftVal = scrollContent.css( "margin-left" ) === "auto" ? 0 :
+                parseInt( scrollContent.css( "margin-left" ) );
+            var percentage = Math.round( leftVal / remainder * 100 );
+            scrollbar.slider( "value", percentage );
+        }
+         
+        //if the slider is 100% and window gets larger, reveal content
+        function reflowContent() {
+                var showing = scrollContent.width() + parseInt( scrollContent.css( "margin-left" ), 10 );
+                var gap = scrollPane.width() - showing;
+                if ( gap > 0 ) {
+                    scrollContent.css( "margin-left", parseInt( scrollContent.css( "margin-left" ), 10 ) + gap );
+                }
+        }
+         
+        //change handle position on window resize
+        $( window ).resize(function() {
+            resetValue();
+            sizeScrollbar();
+            reflowContent();
+        });
+        //init scrollbar size
+        setTimeout( sizeScrollbar, 10 );//safari wants a timeout
+    });
+    </script>
+	
+	
+</head>
+
+<body class="home_tab">
+	<div class="nav">
+		<a id="home_tab" class="menu" href="index.html">Home</a>
+		<a id="bells_tab" class="menu" href="bells.html">Bells</a>
+		<!--a id="gallery_tab" class="menu" href="gallery.html">Gallery</a>
+		<a id="appDownload_tab" class="menu" href="appDownload.html">App Download</a-->
+		<a id="projectLinks_tab" class="menu" href="projectLinks.html">Project Links</a>
+		<a id="team_tab" class="menu" href="team.html">Team</a>
+	</div>
+	
+	<div class="header">
+		<a href="index.html"><img src="Images/heading_9_logo.png" alt="header" height=100/></a>
+	</div>
+
+	<div class="main">
+		<div id="localTime"></div>
+		
+		<center>
+			<div id="map"></div>
+		</center>
+	
+		<div class="slider-group">
+			<span class="slider-label">
+				<label>Day Selected: </label> <label id="dayslider-value">Sunday</label>
+			</span>
+			<div id="dayslider" class="slider">
+				<div class="colored_slider" id="dayslider-color"></div>
+			</div>
+		</div>
+		<div class="slider-group">
+			<span class="slider-label">
+			  <label> Time Selected: </label> <label id="minslider-value">12:00 AM</label>
+			</span>
+			<div id="minslider" class="slider">
+				<div class="colored_slider" id="minslider-color"></div>
+			</div>
+		</div>
+		<br/>
+		<form>
+			<input id="ringPlease" type="checkbox" checked="yes"/><label>Bells On</label>
+		</form>
+		<span id="ringer"></span>
+	</div>	
+	<footer align="center">
+	<br/>
+	VeniceBells.com &copy; 2012<br/>
+	Created by <a href="http://madalyncoryea.com">Madalyn Coryea</a>
+	</footer>	
+</body>
+</html>

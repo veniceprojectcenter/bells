@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View From the Bell Tower di San Giorgio Maggiore</title>
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 97%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+	<script src='https://cdn.firebase.com/v0/firebase.js'></script>
+    <!-- script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script -->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAyOAA9mi5u_6cH_5TNoOYFIyPzT3q3mpA&sensor=false"></script>
+    <script>
+		var rotationEnabled = false,
+          rootRef = new Firebase('https://vpc.firebaseio.com/presentation/bellPanorama'),
+          rotationRef = rootRef.child('rotateBelltower'),
+          orientationRef = rootRef.child('orientation'),
+          soundRef = rootRef.child('playSound'),
+          panoRef = rootRef.child('panoramaVisible'),
+          mapEl, panorama;
+	
+		function initialize() {
+		  // Set up Street View and initially set it visible. Register the
+		  // custom panorama provider function. Set the StreetView to display
+		  // the custom panorama 'view' which we check for below.
+		  var panoOptions = {
+			pano: 'view',
+			visible: true,
+			panoProvider: getCustomPanorama
+		  };
+
+		   mapEl = document.getElementById('map-canvas');
+
+        panorama = new google.maps.StreetViewPanorama(mapEl, panoOptions);
+
+        soundRef.on('value', function(snap) {
+          if (snap.val()) playSound();
+        });
+
+        panoRef.on('value', function(snap) {
+          if (snap.val()) {
+            panorama.setOptions({ visible: true });
+          }
+          else {
+            panorama.setOptions({ visible: false });
+          }
+        });
+
+        rotationRef.on('value', function(snap) {
+          rotationEnabled = snap.val();
+        });
+
+        orientationRef.child('heading').on('value', function(snap) {
+          var heading = snap.val();
+          if (rotationEnabled && heading) {
+            panorama.setPov({
+              heading: -heading,
+              pitch: 0
+            });
+          }
+        });
+      }
+
+      function playSound() {
+        //new Audio('GIMA_audio.mp3').play();  //does not exist
+      }
+
+		// Return a pano image given the panoID.
+		function getCustomPanoramaTileUrl(pano, zoom, tileX, tileY) {
+		  // Note: robust custom panorama methods would require tiled pano data.
+		  // Here we're just using a single tile, set to the tile size and equal
+		  // to the pano "world" size.
+		  return '../Images/GIMA_View_Small.jpg';
+		}
+
+		// Construct the appropriate StreetViewPanoramaData given
+		// the passed pano IDs.
+		function getCustomPanorama(pano, zoom, tileX, tileY) {
+		  if (pano == 'view') {
+			return {
+			  location: {
+				pano: 'view',
+				description: 'Bell Tower di San Giorgio Maggiore'
+			  },
+			  links: [],
+			  // The text for the copyright control.
+			  copyright: 'Imagery (c) 2013 WPI VPC',
+			  // The definition of the tiles for this panorama.
+			  tiles: {
+				tileSize: new google.maps.Size(1024, 512),
+				worldSize: new google.maps.Size(1024, 512),
+				// The heading in degrees at the origin of the panorama
+				// tile set.
+				centerHeading: 130,
+				getTileUrl: getCustomPanoramaTileUrl
+			  }
+			};
+		  }
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+    <div> Click <a href = '../Images/GIMA_View_Large.jpg' target="_blank">this link</a> to view the full resolution panorama.</div>
+  </body>
+</html>

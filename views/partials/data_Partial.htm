@@ -1,0 +1,31 @@
+<!-- <div ng-show="item.data.Book_Link && (item.data.Book_Link != 'Null')"> 
+	<p><a href="{{item.data.Book_Link}}" target="_blank">Click here</a>  or scroll the box below to view extra data from this bell tower collected by Alberto Lionello in his book "Tecniche Costruttive, Dissesti E Consolodamenti Dei Campanili Di Venezia."</p>
+	<iframe data-src="{{item.data.Book_Link}}" width="640" height="480" frameborder="0" class="lazyload"></iframe>
+	<br>
+</div> -->
+
+<div>
+	<table class="ui compact table data-table">
+		<thead>
+			<tr>
+				<th>Field</th>
+			<!-- <th class="fourteen wide">Data</th> -->
+				<th>Data</th>
+			<!-- <tr><th class="two wide">Field</th> -->
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="(fieldId, value) in item | displayForm: mainForm" ng-show="value && value != 'Null'">
+			<!-- <tr ng-repeat="(fieldId, value) in item.data" ng-show="value && value != 'Null'"> -->
+				<td><span style="display:inline;" class="key">{{fieldId}}</span></td>
+				<td><span style="display:inline;" class="value">{{value}}</span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<br>
+
+<!-- <div ng-show="item.data.Photos_Link && (item.data.Photos_Link != 'Null')"> 
+	<p>For more photographs and videos, <a href="{{item.data.Photos_Link}}" target="_blank">click here</a>.</p>
+</div> -->

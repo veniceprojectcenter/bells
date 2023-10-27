@@ -1,0 +1,10 @@
+<div class="fluid-frame-container" ng-show="item.data.Tower_Video && (item.data.Tower_Video != 'Null')">
+	<H3>
+		<a target="_blank" href="{{item.data.Tower_Video}}">
+			Video: Climbing the Tower
+		</a>
+	</H3>
+	<p ng-show="0"><a href="{{item.data.Tower_Video}}" target="_blank">Click here</a>  to view a view of a climb up the bell tower shaft.</p>
+	<iframe class="fluid-frame" width="640" height="480" src="{{item.data.Tower_Video}}" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" class="lazyload"></iframe>
+	<div class="ui section divider"></div>
+</div>

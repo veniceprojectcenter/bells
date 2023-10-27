@@ -1,0 +1,76 @@
+<div class="tower-popup" style="max-width: 200px;">
+	<h2 style="font-size: 16px;">{{popupItem.data['Common name']}}</h2>
+
+<!-- 	<div id="towerImage" style="text-align: center;" ng-show="popupItem.media.images[popupItem.data.CODICE_ext_tower].original && (popupItem.media.images[popupItem.data.CODICE_ext_tower].original != 'Null')">
+		<a href="{{popupItem.media.images[popupItem.data.CODICE_ext_tower].original}}" target="_blank">
+			<img src="{{popupItem.media.images[popupItem.data.CODICE_ext_tower].thumb}}" style="width: 100%; height: auto" title="Click for full resolution." class="lazyload"/>
+		</a>
+	</div class="lazyload"> -->
+
+	<table class="ui very basic compact unstackable table">
+		<tbody>
+			<tr>
+				<td>Bell Tower ID</td>
+				<td>{{popupItem.data['Bell Tower ID']}}</td>
+			</tr>			
+			<tr>
+				<td>Sestiere</td>
+				<td>{{popupItem.data['Sestiere']}}</td>
+			</tr>			
+			<tr>
+				<td>Tower Height (m)</td>
+				<td>{{popupItem.data['Tower height_m']}}</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table style="width: 100%">
+		<tr>
+			<td style="width:1%; white-space:nowrap; padding-right: 5px;">
+				<button class="ui icon button" ng-click="visitVenipedia()">
+					<i class="wikipedia icon"></i>
+				</button>				
+			</td>
+			<td>
+				<button class="fluid ui green button" ng-click="showMoreInfo()">View Tower</button>	
+			</td>
+		</tr>
+	</table>
+
+<!-- 	<div>
+		<button style="display:inline-block;" class="ui icon button" ng-click="visitVenipedia()">
+			<i class="wikipedia icon"></i>
+		</button>
+
+		<div style="display:inline-block;">
+			<button class="fluid ui green button" ng-click="showMoreInfo()">View Tower</button>
+		</div>
+	</div> -->
+</div>
+
+<!-- <table style="min-width:220px;">
+	<tr><td colspan="10">
+		<table style="width:100%;" class="info-popup-table">
+			<tr ng-repeat="(name, value) in popupItem | displayForm:popupLayer.properties.bubble.form" ng-class-odd="'odd-info-popup-row'" ng-class-even="'even-info-popup-row'">
+				<td style="font-weight:bold; width:45%;">
+					{{name}}:
+				</td>
+				<td style="width:100%;">
+					{{value}}
+				</td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr class="info-popup-more-info-row">
+		td><a type="button" class="btn btn-default btn-xs" ng-click="playSound()" ng-show="getSound(popupItem)"><i class="icon-play"></i>Play</a></td
+		<td ng-show="popupItem.data['Page name']">
+			<a type="button" class="btn btn-default btn-xs" ng-click="visitVenipedia()"><span class="icon-wikipedia" style="font-size:18px;"></span></a>
+		</td>
+		<td style="width:100%;text-align:center;cursor:pointer;" ng-click="showMoreInfo()">
+			<span>
+				<span style="vertical-align:middle;font-weight:bold;">More Media</span>
+				<span class="icon-arrow-right" style="font-size:18px;vertical-align:middle;font-weight:bold;"></span>
+			</span>
+		</td>
+	</tr>
+</table> -->

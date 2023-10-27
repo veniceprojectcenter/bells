@@ -1,0 +1,54 @@
+<div class="ui top attached tabular menu" ng-mouseover="setUpTab()">
+	<a class="item active" data-tab="data">
+		Tower
+	</a>
+
+	<a class="item" data-tab="Bells" ng-click="resizeFrames()" ng-show="
+		(item.data.Shaft_Model && (item.data.Shaft_Model != 'Null')) || 
+		(item.data.Belfry_Model && (item.data.Belfry_Model != 'Null')) ||
+		(item.data.Bell_1_Model && (item.data.Bell_1_Model != 'Null')) ||
+		(item.data.Bell_2_Model && (item.data.Bell_2_Model != 'Null')) ||
+		(item.data.Bell_3_Model && (item.data.Bell_3_Model != 'Null')) ||
+		(item.data.Bell_4_Model && (item.data.Bell_4_Model != 'Null')) ||
+		(item.data.Bell_5_Model && (item.data.Bell_5_Model != 'Null')) ||
+		(item.data.Bell_6_Model && (item.data.Bell_6_Model != 'Null')) ||
+		(item.data.Bell_7_Model && (item.data.Bell_7_Model != 'Null')) ||
+		(item.data.Bell_8_Model && (item.data.Bell_8_Model != 'Null')) ||
+		(item.data.Bell_9_Model && (item.data.Bell_9_Model != 'Null'))">
+		Bells
+	</a>
+
+<!-- 	<a class="item" data-tab="Condition" ng-click="resizeFrames()">
+		Condition
+	</a> -->
+
+<!-- 	<a class="item" data-tab="video" ng-click="resizeFrames()"  ng-show="item.data.Tower_Video && (item.data.Tower_Video != 'Null')">
+		Video
+	</a> -->
+</div>
+
+<div class="ui bottom attached tab segment active" data-tab="data">
+	<div ng-include="'/views/partials/matterport_Partial.htm'"></div>
+	<div ng-include="'/views/partials/360Media_Partial.htm'"></div>
+	<div ng-include="'/views/partials/video_Partial.htm'"></div>
+	<div ng-include="'/views/partials/data_Partial.htm'"></div>
+</div>
+
+<div class="ui bottom attached tab segment" data-tab="Bells">
+	<div ng-include="'/views/partials/3dModel_Partial.htm'"></div>
+	<div ng-include="'/views/partials/bellModels_Partial.htm'"></div>
+</div>
+
+<div class="ui bottom attached tab segment" data-tab="Condition">
+	<div ng-include="'/views/partials/condition_Partial.htm'"></div>
+</div>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.tabular.menu .item').tab();
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>

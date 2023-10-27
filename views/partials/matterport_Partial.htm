@@ -1,0 +1,15 @@
+<div ng-show="item.data.Matterport_Model && (item.data.Matterport_Model != 'Null')">
+
+	<H3>
+		Explore {{ item.data['Common name'] }}
+	</H3>
+
+
+	<div class="fluid-frame-container matterport-container">
+		<div>
+			<iframe class="fluid-frame matterport-model" width="775" height="437" ng-src="{{item.data.Matterport_Model | trusted}}" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div class="ui section divider"></div>
+</div>
